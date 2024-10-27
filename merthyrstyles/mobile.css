@@ -73,6 +73,7 @@ body {
     color: #fff; /* Ensuring text color stays readable */
 }
 
+/* Insect Lists */
 .insect-lists {
     display: flex;
     justify-content: space-between; /* Space between lists */
@@ -93,6 +94,25 @@ h5 {
     text-align: center; /* Center align the h5 headings */
     margin-top: 20px; /* Space above h5 headings */
     color: #555; /* Slightly lighter color */
+}
+
+/* Highlighted Link Styles */
+.highlight-link {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #ff4d4d;
+    text-decoration: none;
+    padding: 5px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    display: block; /* Ensure it takes up space */
+    text-align: center; /* Center align text */
+}
+
+.highlight-link:hover {
+    color: white;
+    background-color: #ff4d4d;
+    text-decoration: underline;
 }
 
 /* Responsive Design */
