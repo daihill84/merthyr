@@ -4,13 +4,13 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    color: black;
-    background-color: blue;
+    color: #333; /* Darker text color for better readability */
+    background-color: #e0f7fa; /* Light cyan for a refreshing background */
 }
 
 /* Header Styles */
 .header {
-    background-color: grey;
+    background-color: #00796b; /* Dark teal for the header */
     color: white;
     padding: 10px;
     text-align: center;
@@ -38,10 +38,10 @@ body {
 .highlight-link {
     font-size: 1.2em; /* Slightly increase the base font size */
     font-weight: 800; /* Use a heavier font weight (800 for extra bold) */
-    color: #ffb300; /* Original text color */
+    color: #ff5722; /* A warm, contrasting color */
     text-decoration: none;
     padding: 10px; /* Increased padding for a larger clickable area */
-    background-color: #f9f9f9; /* Background color */
+    background-color: #fff; /* White background for the link */
     border-radius: 8px; /* Slightly larger border radius for a softer look */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Added box shadow for depth */
     transition: all 0.3s ease; /* Smooth transition for hover effects */
@@ -49,12 +49,10 @@ body {
 
 .highlight-link:hover {
     color: white; /* Change text color on hover */
-    background-color: #ff4d4d; /* Change background color on hover */
+    background-color: #ff4d4d; /* Bright red background on hover */
     text-decoration: underline; /* Underline text on hover */
     transform: scale(1.05); /* Slightly enlarge on hover for emphasis */
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
-}
-
 }
 
 /* Logo Container */
@@ -120,7 +118,7 @@ body {
 }
 
 .email-address {
-    color: #ffb300;
+    color: #ff5722; /* Matches the highlight link color */
     text-decoration: none;
     font-weight: bold;
 }
@@ -131,7 +129,7 @@ body {
 
 /* Navigation Styles */
 .navigation {
-    background-color: #00796b;
+    background-color: #004d40; /* Darker teal for navigation */
     overflow: hidden;
 }
 
@@ -155,7 +153,7 @@ body {
 }
 
 .navigation a:hover {
-    background-color: #004d40;
+    background-color: #00796b; /* Lighter teal on hover */
 }
 
 /* Main Content Styles */
@@ -165,20 +163,20 @@ main {
 
 /* Heading Styles */
 h2 {
-    color: #ff5722;
+    color: #ff5722; /* Heading color */
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     text-align: center;
 }
 
 h3 {
-    color: #00796b;
+    color: #00796b; /* Lighter shade of teal for subheadings */
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
     text-align: center;
 }
 
 /* Call Button */
 .call-button {
-    background-color: #ff4d4d;
+    background-color: #ff4d4d; /* Call button color */
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
@@ -188,7 +186,7 @@ h3 {
 }
 
 .call-button:hover {
-    background-color: #ff1a1a;
+    background-color: #ff1a1a; /* Darker shade on hover */
 }
 
 /* Paragraph Styles */
@@ -220,7 +218,7 @@ ul {
 
 /* Section Styles */
 section {
-    background-color: #87CEEB;
+    background-color: #ffffff; /* White background for sections */
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 15px;
@@ -242,7 +240,7 @@ section {
 
 /* Footer */
 .footer {
-    background-color: #004d40;
+    background-color: #004d40; /* Darker teal for the footer */
     color: white;
     text-align: center;
     padding: 10px;
@@ -271,7 +269,7 @@ img {
 
 /* Footer Links */
 .footer a {
-    color: #ffb300;
+    color: #ffb300; /* Matches highlighted link color */
     text-decoration: none;
 }
 
@@ -284,7 +282,7 @@ img {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #ff4081;
+    background-color: #ff4081; /* Pink for the call button */
     color: white;
     padding: 15px;
     border-radius: 50%;
@@ -296,7 +294,7 @@ img {
 }
 
 .floating-call-button:hover {
-    background-color: #f50057;
+    background-color: #f50057; /* Darker pink on hover */
 }
 
 /* Media Queries */
