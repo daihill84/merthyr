@@ -37,7 +37,7 @@ body {
 /* Highlighted Link Styles */
 .highlight-link {
     font-size: 1.2em; /* Slightly increase the base font size */
-    font-weight: 800; /* Use a heavier font weight (800 for extra bold) */
+    font-weight: 800; /* Use a heavier font weight */
     color: #ff5722; /* A warm, contrasting color */
     text-decoration: none;
     padding: 10px; /* Increased padding for a larger clickable area */
@@ -302,8 +302,8 @@ img {
     display: flex;
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
-    height: 100vh; /* Full viewport height */
     flex-direction: column; /* Stack items vertically */
+    margin: 20px; /* Add margin for spacing */
 }
 
 .contact-form {
@@ -313,6 +313,7 @@ img {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
     width: 90%; /* Set a responsive width */
     max-width: 400px; /* Set a max width for larger screens */
+    margin: 0 auto; /* Center the form horizontally */
 }
 
 /* Form Group Styles */
@@ -325,7 +326,8 @@ label {
     margin-bottom: 5px; /* Space below labels */
 }
 
-input, textarea {
+input,
+textarea {
     width: 100%; /* Make inputs and textareas full width */
     padding: 10px; /* Add padding for comfort */
     border: 1px solid #ddd; /* Light border */
@@ -353,38 +355,7 @@ button:hover {
         width: 90%; /* Make form wider on mobile */
         max-width: 90%; /* Ensure it fits well on smaller screens */
     }
-}
 
-
-label {
-    display: block; /* Ensure labels take up the full width */
-    margin-bottom: 5px; /* Space below labels */
-}
-
-input, textarea {
-    width: 100%; /* Make inputs and textareas full width */
-    padding: 10px; /* Add padding for comfort */
-    border: 1px solid #ddd; /* Light border */
-    border-radius: 4px; /* Slightly rounded corners */
-    box-sizing: border-box; /* Ensure padding is included in width */
-}
-
-button {
-    background-color: #00796b; /* Dark teal button */
-    color: white;
-    padding: 10px 15px;
-    border: none; /* Remove default border */
-    border-radius: 5px; /* Slightly rounded corners */
-    cursor: pointer; /* Pointer cursor on hover */
-    transition: background-color 0.3s; /* Smooth transition */
-}
-
-button:hover {
-    background-color: #004d40; /* Darker shade on hover */
-}
-
-/* Media Queries */
-@media only screen and (max-width: 900px) {
     .navigation li {
         float: none;
         width: 100%;
@@ -401,11 +372,5 @@ button:hover {
 
     .center-image {
         max-width: 100px; /* Adjusted for mobile responsiveness */
-    }
-
-    /* Contact Form Adjustments for Mobile */
-    .contact-form {
-        width: 90%; /* Make form wider on mobile */
-        max-width: 400px; /* Max width for larger screens */
     }
 }
