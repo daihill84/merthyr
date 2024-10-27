@@ -34,6 +34,23 @@ body {
     margin-top: 0;
 }
 
+/* Highlighted Link Styles */
+.highlight-link {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #ff4d4d;
+    text-decoration: none;
+    padding: 5px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.highlight-link:hover {
+    color: white;
+    background-color: #ff4d4d;
+    text-decoration: underline;
+}
+
 /* Logo Container */
 .logo-container {
     display: flex;
