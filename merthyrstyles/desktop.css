@@ -38,7 +38,7 @@ body {
 .highlight-link {
     font-size: 1.2em; /* Slightly increase the base font size */
     font-weight: 800; /* Use a heavier font weight (800 for extra bold) */
-    color: #ff4d4d; /* Original text color */
+    color: #ffb300; /* Original text color */
     text-decoration: none;
     padding: 10px; /* Increased padding for a larger clickable area */
     background-color: #f9f9f9; /* Background color */
