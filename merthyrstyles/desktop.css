@@ -297,6 +297,54 @@ img {
     background-color: #f50057; /* Darker pink on hover */
 }
 
+/* Contact Form Styles */
+.contact-section {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Optional: Set height to full viewport height */
+}
+
+.contact-form {
+    background-color: #ffffff; /* White background for contrast */
+    padding: 20px; /* Add padding for aesthetics */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    width: 300px; /* Set a max width for the form */
+}
+
+/* Form Group Styles */
+.form-group {
+    margin-bottom: 15px; /* Space between form fields */
+}
+
+label {
+    display: block; /* Ensure labels take up the full width */
+    margin-bottom: 5px; /* Space below labels */
+}
+
+input, textarea {
+    width: 100%; /* Make inputs and textareas full width */
+    padding: 10px; /* Add padding for comfort */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 4px; /* Slightly rounded corners */
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+button {
+    background-color: #00796b; /* Dark teal button */
+    color: white;
+    padding: 10px 15px;
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Slightly rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #004d40; /* Darker shade on hover */
+}
+
 /* Media Queries */
 @media only screen and (max-width: 900px) {
     .navigation li {
@@ -315,5 +363,11 @@ img {
 
     .center-image {
         max-width: 100px; /* Adjusted for mobile responsiveness */
+    }
+
+    /* Contact Form Adjustments for Mobile */
+    .contact-form {
+        width: 90%; /* Make form wider on mobile */
+        max-width: 400px; /* Max width for larger screens */
     }
 }
