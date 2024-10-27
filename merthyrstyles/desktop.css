@@ -10,7 +10,7 @@ body {
 
 /* Header Styles */
 .header {
-    background-color: #00796b; /* Dark teal for the header */
+    background-color: #004d40; /* Dark teal for the header */
     color: white;
     padding: 10px;
     text-align: center;
@@ -129,7 +129,7 @@ body {
 
 /* Navigation Styles */
 .navigation {
-    background-color: #004d40; /* Darker teal for navigation */
+    background-color: #00796b; /* Dark teal for navigation */
     overflow: hidden;
 }
 
@@ -153,7 +153,7 @@ body {
 }
 
 .navigation a:hover {
-    background-color: #00796b; /* Lighter teal on hover */
+    background-color: #004d40; /* Darker teal on hover */
 }
 
 /* Main Content Styles */
@@ -240,7 +240,7 @@ section {
 
 /* Footer */
 .footer {
-    background-color: #004d40; /* Darker teal for the footer */
+    background-color: #00796b; /* Dark teal for the footer */
     color: white;
     text-align: center;
     padding: 10px;
