@@ -28,7 +28,17 @@
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', 'G-E0KN930C89');
+
+        // Push location data for Merthyr
+        gtag('config', 'G-E0KN930C89', {
+            'location': {
+                'city': 'Merthyr',
+                'region': 'Wales',
+                'country': 'UK',
+                'latitude': 51.7210854,
+                'longitude': -3.7953355
+            }
+        });
     </script>
     <!-- End Global Site Tag -->
 
@@ -111,12 +121,6 @@
 </head>
 
 <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript>
-        <iframe src="https://www.googletagmanager.com/ns.html?id=G-E0KN930C89" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-    </noscript>
-    <!-- End Google Tag Manager (noscript) -->
-</body>
 </html>
 
     <header class="header">
