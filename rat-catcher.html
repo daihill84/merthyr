@@ -3,32 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional rat catcher services in Merthyr, specializing in effective solutions for rat infestations. Contact us for expert assistance!">
-    <meta name="keywords" content="rat catcher, rat control, rat removal, pest control for rats, rat extermination, rat pest control near me, get rid of rats, Merthyr rat catcher">
+    <meta name="description" content="Professional rat catcher services in Merthyr and surrounding Valleys. Specializing in effective rat control, removal, and long-term exclusion for homes and businesses.">
+    <meta name="keywords" content="rat catcher, rat control, rat removal, pest control for rats, rat extermination, rat pest control near me, get rid of rats, Merthyr rat catcher, rodent control Merthyr">
     <meta name="geo.region" content="GB-WLS">
-    <meta name="geo.placename" content="Merthyr">
+    <meta name="geo.placename" content="Merthyr Tydfil">
     <meta name="geo.position" content="51.7210854;-3.7953355">
     <link rel="canonical" href="https://merthyr.welshtownandcountry.co.uk/rat-catcher">
     <link rel="alternate" hreflang="en" href="https://merthyr.welshtownandcountry.co.uk/rat-catcher">
-    <title>Professional Rat Catcher Services in Merthyr </title>
+    <title>Professional Rat Catcher Services in Merthyr Tydfil | Welsh Town And Country</title>
     <link rel="icon" href="merthyrimages/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="merthyrstyles/desktop.css">
     <link rel="stylesheet" href="merthyrstyles/mobile.css" media="only screen and (max-width: 900px)">
 
-      <!-- Apple Meta Tags -->
     <link rel="apple-touch-icon" href="merthyrimages/apple_touch_icon.png">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-title" content="Pest Control Neath">
+    <meta name="apple-mobile-web-app-title" content="Pest Control Merthyr">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Professional Rat Catcher Services in Merthyr ">
-    <meta property="og:description" content="Professional rat catcher services in Merthyr, specializing in effective solutions for rat infestations. Contact us for expert assistance!">
+    <meta property="og:title" content="Professional Rat Catcher Services in Merthyr Tydfil">
+    <meta property="og:description" content="Expert rat catcher services in Merthyr, specializing in effective solutions for rat infestations. Contact us for immediate assistance!">
     <meta property="og:image" content="https://merthyr.welshtownandcountry.co.uk/merthyrimages/logo.png">
     <meta property="og:url" content="https://merthyr.welshtownandcountry.co.uk/rat-catcher">
     <meta name="robots" content="index, follow">
 
-    <!-- Global Site Tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-E0KN930C89"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -38,7 +35,7 @@
         // Push location data for Merthyr
         gtag('config', 'G-E0KN930C89', {
             'location': {
-                'city': 'Merthyr',
+                'city': 'Merthyr Tydfil',
                 'region': 'Wales',
                 'country': 'UK',
                 'latitude': 51.7210854,
@@ -46,9 +43,6 @@
             }
         });
     </script>
-    <!-- End Global Site Tag -->
-
-    <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -59,7 +53,7 @@
         "email": "info@welshtownandcountry.co.uk",
         "address": {
             "@type": "PostalAddress",
-            "addressLocality": "Merthyr",
+            "addressLocality": "Merthyr Tydfil",
             "addressRegion": "Wales",
             "postalCode": "SA11 4DP",
             "streetAddress": "11 Glynmerthyr Road"
@@ -74,8 +68,8 @@
             "latitude": 51.7210854,
             "longitude": -3.7953355
         },
-        "openingHours": "Mo-Su 24/7",
-        "description": "Expert pest control services in Merthyr, including wasp removal, rodent control, and insect management. Contact us for professional help!"
+        "openingHours": "Mo-Su 00:00-24:00",
+        "description": "Professional rat catching and rodent control services in Merthyr Tydfil, available 24/7."
     }
     </script>
 
@@ -89,24 +83,30 @@
             color: white; /* White text */
             border: none; /* No border */
             border-radius: 50%; /* Circular button */
-            width: 60px; /* Button width */
-            height: 60px; /* Button height */
-            display: flex; /* Center the icon */
+            width: 70px; /* Adjusted size for text */
+            height: 70px; /* Adjusted size for text */
+            display: flex; /* Center the content */
+            flex-direction: column;
             align-items: center; /* Center vertically */
             justify-content: center; /* Center horizontally */
-            font-size: 24px; /* Font size */
+            font-size: 10px; /* Font size for text */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
             cursor: pointer; /* Pointer cursor */
             transition: background-color 0.3s; /* Transition for hover effect */
+            z-index: 999;
+            text-decoration: none;
+            line-height: 1.2;
         }
 
         .floating-call-button:hover {
             background-color: #218838; /* Darker green on hover */
         }
-
-        .floating-call-button a {
-            color: white; /* White text color */
-            text-decoration: none; /* No underline */
+        
+        /* Ensure the icon is legible */
+        .floating-call-button::before {
+             content: "📞";
+             font-size: 20px;
+             margin-bottom: 2px;
         }
 
         /* Centered Image */
@@ -116,13 +116,22 @@
             margin-right: auto;
             width: 50%; /* Adjust the size as needed */
         }
+
+        /* Basic styles for navigation/header elements if they aren't in desktop/mobile.css */
+        .header { text-align: center; padding: 20px; }
+        .phone-number a, .email-info a { font-weight: bold; font-size: 1.2em; text-decoration: none; color: inherit; }
+        .navigation ul { list-style: none; padding: 0; display: flex; justify-content: center; flex-wrap: wrap; }
+        .navigation li { margin: 5px 10px; }
+        .navigation a { text-decoration: none; color: inherit; }
     </style>
 
     <script>
-        fbq('track', 'Purchase', {
-            value: 30.00,
-            currency: 'USD'
-        });
+        // The Facebook Pixel Purchase track is likely inappropriate for a service page. It is included 
+        // here to complete the original structure, but should be removed or moved to a 'Thank You' page.
+        // fbq('track', 'Purchase', {
+        //     value: 30.00,
+        //     currency: 'USD'
+        // });
     </script>
 </head>
 
@@ -130,9 +139,9 @@
 
     <header class="header">
         <div class="logo-container">
-            <img src="merthyrimages/logo.png" alt="Logo" class="logo">
+            <img src="merthyrimages/logo.png" alt="Welsh Town And Country Pest Services Logo" class="logo">
             <div class="company-name">Welsh Town And Country Pest Services</div>
-            <h1>Professional Rat Catcher Services in merthyr</h1>
+            <h1>Rat Catcher & Professional Rodent Control in Merthyr Tydfil</h1>
         </div>
         <div class="contact-info">
             <div class="phone-number">
@@ -144,7 +153,7 @@
         </div>
     </header>
     
-     <nav class="navigation">
+    <nav class="navigation">
         <ul>
             <li><a href="index">Home</a></li>
             <li><a href="wasp-nest-removal">Wasp Nest Removal</a></li>
@@ -157,63 +166,86 @@
     </nav>
 
     <main>
-    <section>
-        <h2>Professional Rat Catcher Services</h2>
-        <p>Welcome to our Rat Catcher Services page! If you're dealing with a rat issue in Merthyr and surrounding area, our expert team is ready to assist you with tailored solutions for effective rat control and removal.</p>
-        <p>Our rat catcher services encompass:</p>
-        <ul>
-            <li><strong>Inspection:</strong> A detailed examination of your property to identify rat activity.</li>
-            <li><strong>Exclusion:</strong> Strategies to prevent rats from entering your space.</li>
-            <li><strong>Treatment:</strong> Proven methods, including the use of poisons and chemicals, to safely eliminate rats from your premises.</li>
-            <li><strong>Monitoring:</strong> Follow-up visits to ensure long-lasting results.</li>
-        </ul>
-<h3>Why Choose Our Rat Catcher Services?</h3>
-<p>At Welsh Town And Country Pest Services, we understand the importance of keeping your property safe and rat-free. Your safety and satisfaction are our top priorities, and our trained professionals use advanced techniques to effectively manage rat populations. We incorporate strategic approaches tailored to your specific needs, aiming to quickly and thoroughly eliminate any rat issues on your property. By combining our expertise with proven methods, we ensure that our services are not only effective but also respectful of your environment and household.</p>
-<p>Our team employs a variety of methods, including the careful use of poisons and professional-grade chemicals, to target rats efficiently while minimizing any risks to your family, pets, and other non-target animals. We strictly adhere to the latest industry standards and safety guidelines, providing peace of mind with every treatment. Additionally, our approach includes preventive measures to help stop future infestations before they start, offering you long-term protection against rat problems.</p>
-<p>Environmental responsibility is an essential part of our service. For clients who are particularly concerned about eco-friendly practices, we offer a range of environmentally conscious options. These options may involve methods such as humane trapping and non-toxic deterrents, which are effective but may require more time for results. It’s important to note that these eco-friendly treatments may incur slightly higher costs due to the increased labor and resources involved. If you're interested in a completely eco-friendly approach, please feel free to discuss it with us in detail. We are happy to customize our service to meet your preferences and ensure the most sustainable, effective solution possible.</p>
-<p>Our commitment to customer service means that we’re always available to answer your questions, explain our process, and provide updates on the progress of your treatment plan. Don’t hesitate to reach out if you need further clarification or if you'd like a consultation about our rat control services.</p>
-<p>Contact us today at <a href="tel:07375303124">07375 303124</a> or <a class="email-address" id="email-address" href="#" onclick="sendEmail()">Email Me</a> for expert rat catcher services that you can trust. Whether you're looking for immediate assistance or ongoing pest prevention, we’re here to provide reliable, professional support for your home or business.</p>
- </section>
-</main>
+        <section>
+            <h2>Merthyr's Specialist for Rat Control and Removal</h2>
+            <p>Welcome to our Rat Catcher Services page! If you're dealing with a rat issue in **Merthyr Tydfil** and the surrounding area, our expert team is ready to assist you with tailored solutions for effective rat control and removal. Rats pose a significant health risk and can cause extensive damage to property, insulation, and wiring. We provide a swift, professional, and discreet service to protect your home or business.</p>
+            
+            <p>Our comprehensive rat catcher services encompass:</p>
+            <ul>
+                <li><strong>Inspection:</strong> A detailed examination of your property, including lofts, basements, and drainage systems, to identify entry points and rat activity hotspots.</li>
+                <li><strong>Exclusion:</strong> Implementing effective proofing strategies to prevent rats from re-entering your space after treatment.</li>
+                <li><strong>Treatment:</strong> Proven methods to safely and efficiently eliminate rat populations from your premises. This includes the responsible use of **professional-grade rodenticides** and/or trapping strategies, strictly adhering to UK safety regulations.</li>
+                <li><strong>Monitoring:</strong> Follow-up visits to ensure the infestation is completely cleared and to guarantee long-lasting results.</li>
+            </ul>
+
+            <h3>Why Choose Our Rat Catcher Services?</h3>
+            <p>At Welsh Town And Country Pest Services, we understand the importance of keeping your property safe and rat-free. Your safety and satisfaction are our top priorities, and our trained professionals use advanced techniques to effectively manage rat populations. We incorporate strategic approaches tailored to your specific needs, aiming to quickly and thoroughly eliminate any rat issues on your property. By combining our expertise with proven methods, we ensure that our services are not only effective but also respectful of your environment and household.</p>
+            
+            <p>Our team employs a variety of methods, including the careful use of poisons and professional-grade chemicals, to target rats efficiently while minimizing any risks to your family, pets, and other non-target animals. We strictly adhere to the latest industry standards and safety guidelines, providing peace of mind with every treatment. Additionally, our approach includes preventive measures to help stop future infestations before they start, offering you long-term protection against rat problems.</p>
+            
+            <p>Environmental responsibility is an essential part of our service. For clients who are particularly concerned about eco-friendly practices, we offer a range of environmentally conscious options. These options may involve methods such as humane trapping and non-toxic deterrents, which are effective but may require more time for results. It’s important to note that these eco-friendly treatments may incur slightly higher costs due to the increased labor and resources involved. If you're interested in a completely eco-friendly approach, please feel free to discuss it with us in detail. We are happy to customize our service to meet your preferences and ensure the most sustainable, effective solution possible.</p>
+            
+            <p>Our commitment to customer service means that we’re always available to answer your questions, explain our process, and provide updates on the progress of your treatment plan. Don’t hesitate to reach out if you need further clarification or if you'd like a consultation about our rat control services.</p>
+            
+            <p>Contact us today at **<a href="tel:07375303124">07375 303124</a>** or <a href="mailto:info@welshtownandcountry.co.uk">Email Us</a> for expert rat catcher services that you can trust. Whether you're looking for immediate assistance or ongoing pest prevention, we’re here to provide reliable, professional support for your home or business.</p>
+        </section>
 
 
         <section>
             <h2>Signs of a Rat Infestation</h2>
+            <p>It's important to recognize the early warning signs of a rat problem:</p>
             <ul>
-                <li>Droppings found near food sources or along pathways.</li>
-                <li>Chewed wires or furniture.</li>
-                <li>Nests made of shredded paper or fabric.</li>
-                <li>Unusual noises coming from walls or attics, especially at night.</li>
+                <li>**Droppings** found near food sources, in lofts, or along pathways (usually dark, tapered pellets).</li>
+                <li>**Chewed wires** or damage to furniture, skirting boards, or pipework.</li>
+                <li>**Nests** made of shredded paper, cardboard, or fabric, often found in warm, hidden areas.</li>
+                <li>**Unusual noises** (scuttling, gnawing, squeaking) coming from walls, suspended ceilings, or attics, especially at night.</li>
+                <li>**Smear Marks** (greasy streaks) left by rats rubbing their bodies along walls and runways.</li>
             </ul>
-            <p>If you notice any of these signs, it's crucial to take immediate action to prevent further infestation.</p>
+            <p>If you notice any of these signs, it's crucial to take immediate action to prevent further infestation and structural damage.</p>
         </section>
 
         <section>
-            <h2>Contact Us Today!</h2>
-            <p>If you're dealing with a rat problem, reach out now for professional help! Call us at <a href="tel:07375303124">07375 303124</a> or <a class="email-address" id="email-address" href="#" onclick="sendEmail()">Email Me</a> for immediate assistance with our <strong>rat catcher services</strong>.</p>
+            <h2>Serving Merthyr Tydfil and Surrounding Valleys</h2>
+            <p>We provide rapid response services across the entire Merthyr area, ensuring quick relief from rat problems whether you are in the town center, Dowlais, Troed-y-rhiw, Treharris, or any of the surrounding communities.</p>
+        </section>
+
+        <section>
+            <h2>Contact Us Today for Immediate Rat Catcher Services!</h2>
+            <p>Don't let rats take over your property. Reach out now for professional, discreet help! Call us at **<a href="tel:07375303124">07375 303124</a>** or <a href="mailto:info@welshtownandcountry.co.uk">Email Us</a> for immediate assistance with our **rat catcher services**.</p>
         </section>
     </main>
 
     <footer class="footer">
         <p>&copy; 2024 Welsh Town And Country Pest Services. All rights reserved.</p>
-        <p>Follow us on <a href="https://www.facebook.com/profile.php?id=61564861332160" target="_blank">Facebook</a>, <a href="https://www.instagram.com/" target="_blank">Instagram</a>, and <a href="https://twitter.com/" target="_blank">Twitter</a>.</p>
-        <p>Phone: <a href="tel:07375303124">07375 303124</a>
-        <p><a class="email-address" id="email-address" href="#" onclick="sendEmail()">Email Me</a></p>
+        <div class="footer-links">
+            <p>Follow us on 
+                <a href="https://www.facebook.com/profile.php?id=61564861332160" target="_blank">Facebook</a>, 
+                <a href="https://www.instagram.com/welshtownandcountry.co.uk/" target="_blank">Instagram</a>, 
+                <a href="https://www.linkedin.com/in/welsh-town-and-country-pest-services/" target="_blank">LinkedIn</a>, and 
+                <a href="https://www.youtube.com/channel/UC1ty_8r3JnreT1uFf5P2hmA" target="_blank">YouTube</a>.
+            </p>
+        </div>
+        <p>Phone: **<a href="tel:07375303124">07375 303124</a>**</p>
+        <p>Email: <a href="mailto:info@welshtownandcountry.co.uk">info@welshtownandcountry.co.uk</a></p>
     </footer>
     
-    <!-- Floating Call Button -->
-    <a href="tel:07375303124" class="floating-call-button">📞CALL ME</a>
+    <a href="tel:07375303124" class="floating-call-button">CALL NOW</a>
 
     <script>
+        // Function to toggle email display (though HTML structure makes direct link better)
         function toggleEmail() {
-            const emailAddress = document.getElementById('email-address');
-            emailAddress.style.display = emailAddress.style.display === 'none' ? 'block' : 'none';
+            const emailAddress = document.querySelector('.email-info a');
+            // Logic for a hidden email element - currently the email is visible via link
+            if (emailAddress) {
+                // This function is less relevant as the link is visible, but included for completeness.
+                // If you had a span with the email, this would be:
+                // emailAddress.style.display = emailAddress.style.display === 'none' ? 'block' : 'none';
+            }
         }
 
+        // Function to trigger email client
         function sendEmail() {
-            const username = 'info';
-            const hostname = 'welshtownandcountry.co.uk';
-            window.location.href = `mailto:${username}@${hostname}`;
+            window.location.href = 'mailto:info@welshtownandcountry.co.uk';
         }
     </script>
 </body>
