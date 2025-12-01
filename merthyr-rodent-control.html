@@ -3,67 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rat Catcher Merthyr Tydfil | Farms • Houses • Units | Same-Day 07375 303124</title>
-    <meta name="description" content="Same-day rat & mouse control for farms, houses & commercial units across Merthyr, Rhymney, Ebbw Vale, Tredegar, Brynmawr, Blaina, Ystradgynlais & all Heads of the Valleys. Call 07375 303124 now.">
+    <title>Rat & Mouse Catcher Merthyr Tydfil | Farms • Houses • Same-Day 07375 303124</title>
+    <meta name="description" content="Same-day rat & mouse control for farms, houses & commercial units across Merthyr, Rhymney, Ebbw Vale, and all Heads of the Valleys. Specialising in poison-free farm rat control. Call 07375 303124 now.">
     <meta name="keywords" content="rat catcher Merthyr, farm rat control Merthyr, rat in house Rhymney, rodent control Ebbw Vale, mouse removal Tredegar, commercial rat control Brynmawr, Heads of the Valleys pest control">
     <link rel="canonical" href="https://merthyr.welshtownandcountry.co.uk/rat-catcher">
     <meta property="og:title" content="Rat Catcher Merthyr – Farms • Houses • Units – Same Day">
     <meta property="og:description" content="Livestock-safe rat control for farms • Poison-free for houses • Discreet contracts for units. Call 07375 303124 – open 7 days.">
     <meta property="og:image" content="https://merthyr.welshtownandcountry.co.uk/merthyrimages/rat-hero.jpg">
     
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Welsh Town And Country Pest Services (Merthyr Tydfil)",
+        "telephone": "+447375303124",
+        "url": "https://merthyr.welshtownandcountry.co.uk/rat-catcher",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Merthyr Tydfil",
+            "addressRegion": "Wales",
+            "postalCode": "SA11 4DP" 
+        },
+        "areaServed": [
+            {"@type": "City", "name": "Merthyr Tydfil"},
+            {"@type": "City", "name": "Rhymney"},
+            {"@type": "City", "name": "Ebbw Vale"},
+            {"@type": "City", "name": "Tredegar"}
+        ]
+    }
+    </script>
+    
     <style>
+        /* Base Styles */
         body{font-family:'Segoe UI',sans-serif;margin:0;background:#f8f9fa;color:#222;line-height:1.7}
+        a{text-decoration:none;color:inherit;}
+        
+        /* Navigation (Standard Merthyr Red/White Theme) */
+        .navigation { background: #cc0000; padding: 10px 0; }
+        .navigation ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; }
+        .navigation a { color: white; padding: 10px 15px; text-decoration: none; font-weight: bold; display: block; }
+        .navigation a:hover { background: #aa0000; }
+        
+        /* Hero Section */
         .hero{background:#0a5d0a url('https://merthyr.welshtownandcountry.co.uk/merthyrimages/rat-hero.jpg') center/cover no-repeat;height:80vh;min-height:500px;display:flex;align-items:center;justify-content:center;text-align:center;color:white;position:relative}
-        .hero::before{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.55)}
-        .hero h1{font-size:3.2rem;margin:0;z-index:2}
-        .bigcta{background:#ff9800;color:white;padding:22px 40px;font-size:1.8rem;border:none;border-radius:16px;cursor:pointer;box-shadow:0 10px 30px rgba(0,0,0,0.3);transition:0.3s}
+        .hero::before{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.55);z-index:1}
+        .hero > div {z-index: 2; padding: 20px;}
+        .hero h1{font-size:3.2rem;margin:0;}
+        .bigcta{background:#ff9800;color:white;padding:22px 40px;font-size:1.8rem;border:none;border-radius:16px;cursor:pointer;box-shadow:0 10px 30px rgba(0,0,0,0.3);transition:0.3s;display:inline-block;margin-top:20px;}
         .bigcta:hover{background:#e68900;transform:scale(1.05)}
+        
+        /* Grid Cards */
         .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:30px;padding:50px 20px;max-width:1300px;margin:auto}
-        .card{background:white;border-radius:20px;overflow:hidden;box-shadow:0 15px 40px rgba(0,0,0,0.12);text-align:center;transition:0.3s}
+        .card{background:white;border-radius:20px;overflow:hidden;box-shadow:0 15px 40px rgba(0,0,0,0.12);text-align:center;transition:0.3s;padding-bottom:20px;}
         .card:hover{transform:translateY(-12px)}
         .card img{width:100%;height:240px;object-fit:cover}
         .card h3{font-size:1.8rem;color:#0a5d0a;margin:20px 0 10px}
+        
+        /* Areas Section */
         .areas{background:#0a5d0a;color:white;padding:50px 20px;text-align:center}
-        .areas ul{columns:3;max-width:1000px;margin:30px auto;list-style:none}
+        .areas ul{columns:3;max-width:1000px;margin:30px auto;list-style:none;text-align:left;}
         .areas li:before{content:"✓ ";color:#ff9800;font-weight:bold}
+        .areas h2 {color:white;}
+        
+        /* Footer */
         footer{background:#333;color:white;padding:40px;text-align:center}
-        .float-btn{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#ff4d4d;color:white;padding:18px 40px;border-radius:50px;font-size:1.6rem;box-shadow:0 8px 20px rgba(0,0,0,0.4);z-index:999}
+        
+        /* Floating Call Button */
+        .float-btn{position:fixed;bottom:20px;right:20px;background:#ff4d4d;color:white;padding:18px 25px;border-radius:50px;font-size:1.6rem;box-shadow:0 8px 20px rgba(0,0,0,0.4);z-index:999;transition:0.3s;display:inline-block;}
+        .float-btn:hover {background:#e64444;}
+        
+        /* Responsive */
         @media(max-width:768px){
             .hero h1{font-size:2.4rem}.bigcta{font-size:1.5rem;padding:18px 30px}
-            .areas ul{columns:2}.float-btn{font-size:1.4rem;padding:16px 30px}
+            .areas ul{columns:2;text-align:center;padding-left:0;}
+            .float-btn{left:auto;transform:none;}
+            .navigation a {padding: 8px 10px;}
         }
     </style>
 </head>
 <body>
 
+<nav class="navigation">
+    <ul>
+        <li><a href="index">Home</a></li>
+        <li><a href="wasp-nest-removal">Wasp Nest Removal</a></li>
+        <li><a href="rat-catcher" aria-current="page">Rodent Control</a></li>
+        <li><a href="/llandeilo_rat-catcher">Llandeilo Rat Control</a></li>
+        <li><a href="pest-management">Commercial Contracts</a></li>
+        <li><a href="contact">Contact</a></li>
+    </ul>
+</nav>
+
 <div class="hero">
     <div>
         <h1>Rat & Mouse Catcher<br>Merthyr Tydfil & Heads of the Valleys</h1>
-        <p style="font-size:2rem;margin:20px 0">Farms • Houses • Commercial Units</p>
+        <p style="font-size:2rem;margin:20px 0;z-index:2">Farms • Houses • Commercial Units</p>
         <a href="tel:07375303124"><button class="bigcta">CALL NOW – 07375 303124</button></a>
-        <p style="font-size:1.6rem;margin-top:20px">Same-day • 7 days • Livestock & child safe methods</p>
+        <p style="font-size:1.6rem;margin-top:20px;z-index:2">Same-day • 7 days • Livestock & child safe methods</p>
     </div>
+</div>
+
+<div style="padding:40px 20px;text-align:center;max-width:1000px;margin:auto;">
+    <h2>Specialist Rodent Control for the Merthyr Tydfil Area</h2>
+    <p style="font-size:1.15rem;">We are the local experts in swift, guaranteed **rat and mouse removal** across the Merthyr Valley, Rhymney, and Ebbw Vale. Unlike national companies, we understand the specific challenges of rodent control in the Valleys, from farmyard infestations damaging silage to rats gaining access through old sewage lines in residential streets. We offer specialized, **poison-free** treatments for sensitive environments, ensuring a permanent solution without risks to pets, children, or livestock.</p>
 </div>
 
 <div class="grid">
     <div class="card">
         <img src="https://merthyr.welshtownandcountry.co.uk/merthyrimages/rat-barn.jpg" alt="Farm rat control Merthyr">
         <h3>Farms & Silage Stores</h3>
-        <p>100% poison-free trapping – safe for cattle, sheep, dogs & silage. Treharris, Merthyr Vale & valley farms covered.</p>
+        <p>100% **poison-free trapping** – safe for cattle, sheep, dogs & silage stores. Serving Treharris, Merthyr Vale & valley farms with discreet, effective control.</p>
         <a href="tel:07375303124"><button class="bigcta">STOP FARM RATS TODAY</button></a>
     </div>
 
     <div class="card">
         <img src="https://merthyr.welshtownandcountry.co.uk/merthyrimages/rat-house.jpg" alt="House rat removal Merthyr">
         <h3>Houses & Lofts</h3>
-        <p>Fast, discreet removal from homes in Dowlais, Cefn Coed, Aberfan & across the valleys. Child & pet friendly.</p>
+        <p>Fast, discreet **rat and mouse removal** from homes in Dowlais, Cefn Coed, Aberfan & across the valleys. We focus on proofing to prevent future entry.</p>
         <a href="tel:07375303124"><button class="bigcta">CLEAR RATS FROM MY HOUSE</button></a>
     </div>
 
     <div class="card">
         <img src="https://merthyr.welshtownandcountry.co.uk/merthyrimages/rat-unit.jpg" alt="Commercial unit rat control Merthyr">
         <h3>Factories • Warehouses • Shops</h3>
-        <p>Audit-ready contracts, unmarked vans, zero disruption. Triangle Business Park, Goat Mill Road & all industrial estates.</p>
+        <p>**Audit-ready contracts**, unmarked vans, zero disruption to your business operations. Covering Triangle Business Park, Goat Mill Road & all industrial estates.</p>
         <a href="tel:07375303124"><button class="bigcta">PROTECT MY BUSINESS</button></a>
     </div>
 </div>
