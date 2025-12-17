@@ -3,7 +3,7 @@
     <url>
         <loc>https://merthyr.welshtownandcountry.co.uk/index.html</loc>
         <lastmod>2025-12-17</lastmod>
-        <changefreq>weekly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
 
@@ -13,12 +13,14 @@
         <changefreq>daily</changefreq>
         <priority>0.95</priority>
     </url>
+
     <url>
-        <loc>https://merthyr.welshtownandcountry.co.uk/merthyr-rodent-control.html</loc>
+        <loc>https://merthyr.welshtownandcountry.co.uk/rat-catcher-tredegar.html</loc>
         <lastmod>2025-12-17</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>0.90</priority>
+        <priority>0.95</priority>
     </url>
+
     <url>
         <loc>https://merthyr.welshtownandcountry.co.uk/rat-catcher.html</loc>
         <lastmod>2025-12-17</lastmod>
@@ -26,50 +28,16 @@
         <priority>0.90</priority>
     </url>
     <url>
-        <loc>https://merthyr.welshtownandcountry.co.uk/cockroach-bed-bug-flea-control.html</loc>
-        <lastmod>2025-12-17</lastmod>
-        <priority>0.90</priority>
-    </url>
-
-    <url>
-        <loc>https://merthyr.welshtownandcountry.co.uk/woodworm.html</loc>
-        <lastmod>2025-12-17</lastmod>
-        <priority>0.85</priority>
-    </url>
-    <url>
         <loc>https://merthyr.welshtownandcountry.co.uk/mole-catching.html</loc>
         <lastmod>2025-12-17</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.90</priority>
+    </url>
+    <url>
+        <loc>https://merthyr.welshtownandcountry.co.uk/merthyr-rodent-control.html</loc>
+        <lastmod>2025-12-17</lastmod>
+        <changefreq>weekly</changefreq>
         <priority>0.85</priority>
-    </url>
-    <url>
-        <loc>https://merthyr.welshtownandcountry.co.uk/pest-management.html</loc>
-        <priority>0.80</priority>
-    </url>
-
-    <url>
-        <loc>https://merthyr.welshtownandcountry.co.uk/insect-control.html</loc>
-        <priority>0.75</priority>
-    </url>
-    <url>
-        <loc>https://merthyr.welshtownandcountry.co.uk/mouse-removal.html</loc>
-        <priority>0.75</priority>
-    </url>
-    <url>
-        <loc>https://merthyr.welshtownandcountry.co.uk/moth-silverfish-carpet-biscuit-beetles.html</loc>
-        <priority>0.65</priority>
-    </url>
-    <url>
-        <loc>https://merthyr.welshtownandcountry.co.uk/house-fly-woodworm-mosquito-control.html</loc>
-        <priority>0.60</priority>
-    </url>
-
-    <url>
-        <loc>https://merthyr.welshtownandcountry.co.uk/wasp-nest-removal.html</loc>
-        <priority>0.70</priority>
-    </url>
-    <url>
-        <loc>https://merthyr.welshtownandcountry.co.uk/bee-removal.html</loc>
-        <priority>0.60</priority>
     </url>
 
     <url>
@@ -77,5 +45,53 @@
         <lastmod>2025-12-17</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.90</priority>
+    </url>
+
+    <url>
+        <loc>https://merthyr.welshtownandcountry.co.uk/wasp-nest-removal.html</loc>
+        <lastmod>2025-12-17</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://merthyr.welshtownandcountry.co.uk/pest-management.html</loc>
+        <lastmod>2025-12-17</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://merthyr.welshtownandcountry.co.uk/insect-control.html</loc>
+        <lastmod>2025-12-17</lastmod>
+        <priority>0.75</priority>
+    </url>
+    <url>
+        <loc>https://merthyr.welshtownandcountry.co.uk/cockroach-bed-bug-flea-control.html</loc>
+        <lastmod>2025-12-17</lastmod>
+        <priority>0.70</priority>
+    </url>
+    <url>
+        <loc>https://merthyr.welshtownandcountry.co.uk/mouse-removal.html</loc>
+        <lastmod>2025-12-17</lastmod>
+        <priority>0.70</priority>
+    </url>
+
+    <url>
+        <loc>https://merthyr.welshtownandcountry.co.uk/woodworm.html</loc>
+        <lastmod>2025-12-17</lastmod>
+        <priority>0.65</priority>
+    </url>
+    <url>
+        <loc>https://merthyr.welshtownandcountry.co.uk/moth-silverfish-carpet-biscuit-beetles.html</loc>
+        <lastmod>2025-12-17</lastmod>
+        <priority>0.60</priority>
+    </url>
+    <url>
+        <loc>https://merthyr.welshtownandcountry.co.uk/house-fly-woodworm-mosquito-control.html</loc>
+        <lastmod>2025-12-17</lastmod>
+        <priority>0.55</priority>
+    </url>
+    <url>
+        <loc>https://merthyr.welshtownandcountry.co.uk/bee-removal.html</loc>
+        <lastmod>2025-12-17</lastmod>
+        <priority>0.50</priority>
     </url>
 </urlset>
