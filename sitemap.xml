@@ -10,21 +10,23 @@
     <url>
         <loc>https://merthyr.welshtownandcountry.co.uk/bed-bug-removal.html</loc>
         <lastmod>2025-12-17</lastmod>
-        <changefreq>weekly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>0.95</priority>
-    </url>
-    <url>
-        <loc>https://merthyr.welshtownandcountry.co.uk/cockroach-bed-bug-flea-control.html</loc>
-        <lastmod>2025-12-17</lastmod>
-        <priority>0.90</priority>
     </url>
     <url>
         <loc>https://merthyr.welshtownandcountry.co.uk/merthyr-rodent-control.html</loc>
         <lastmod>2025-12-17</lastmod>
+        <changefreq>weekly</changefreq>
         <priority>0.90</priority>
     </url>
     <url>
         <loc>https://merthyr.welshtownandcountry.co.uk/rat-catcher.html</loc>
+        <lastmod>2025-12-17</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.90</priority>
+    </url>
+    <url>
+        <loc>https://merthyr.welshtownandcountry.co.uk/cockroach-bed-bug-flea-control.html</loc>
         <lastmod>2025-12-17</lastmod>
         <priority>0.90</priority>
     </url>
@@ -73,6 +75,7 @@
     <url>
         <loc>https://merthyr.welshtownandcountry.co.uk/contact.html</loc>
         <lastmod>2025-12-17</lastmod>
+        <changefreq>monthly</changefreq>
         <priority>0.90</priority>
     </url>
 </urlset>
