@@ -6,6 +6,12 @@
 
 <title>Pest Control Merthyr Tydfil | 24/7 Council Alternative | CF47 Specialist</title>
 
+<meta name="description" content="Local pest control in Merthyr Tydfil. Faster alternative to council services for rats, bed bugs & wasps. Same-day emergency response. Call 07375 303124.">
+<meta name="keywords" content="pest control Merthyr Tydfil, council pest control alternative Merthyr, rat control CF47, bed bug removal Merthyr, emergency exterminator Merthyr, Awaab's Law compliance Wales">
+
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://merthyr.welshtownandcountry.co.uk/">
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -14,10 +20,11 @@
   "telephone": "+447375303124",
   "url": "https://merthyr.welshtownandcountry.co.uk/",
   "logo": "https://merthyr.welshtownandcountry.co.uk/merthyrimages/logo.png",
-  "description": "Leading independent alternative to Merthyr Council. Same-day response for rats, bed bugs, and woodworm.",
+  "description": "Leading independent alternative to Merthyr Council. 24/7 same-day response for rats, bed bugs, and woodworm across the Valleys.",
   "areaServed": [
     "Merthyr Tydfil", "Dowlais", "Treharris", "Aberfan", "Rhymney", "Ebbw Vale", "Nelson", 
-    "Troedyrhiw", "Penydarren", "Cefn-coed-y-Cymmer", "Bedlinog", "Quakers Yard", "Nelson"
+    "Troedyrhiw", "Penydarren", "Cefn-coed-y-Cymmer", "Bedlinog", "Quakers Yard", "Thomastown", 
+    "Cyfarthfa", "Edwardsville", "Merthyr Vale", "Abercanaid"
   ],
   "openingHours": "Mo-Su 00:00-23:59",
   "priceRange": "££"
@@ -25,17 +32,21 @@
 </script>
 
 <style>
-:root{--green:#0b6623;--red:#d32f2f;--gold:#ffcc00;--light:#f8f9fa}
-body{font-family:'Segoe UI', sans-serif;margin:0;color:#222;line-height:1.6}
+:root{--green:#0b6623;--dark-green:#083d14;--red:#d32f2f;--gold:#ffcc00;--light:#f8f9fa}
+body{font-family:'Segoe UI', Tahoma, sans-serif;margin:0;color:#222;line-height:1.6;background-color:#fff}
 header{background:var(--green);color:#fff;padding:1.5rem;text-align:center;border-bottom:5px solid var(--gold)}
-nav{background:#083d14;position:sticky;top:0;z-index:1000}
+nav{background:var(--dark-green);position:sticky;top:0;z-index:1000}
 nav ul{list-style:none;margin:0;padding:0;display:flex;justify-content:center;flex-wrap:wrap}
 nav a{color:#fff;padding:15px 20px;display:block;text-decoration:none;font-weight:bold}
+nav a:hover{background:var(--green)}
+
+main{max-width:1100px;margin:2rem auto;padding:0 1.2rem}
+.alert-strip{background:var(--gold);padding:12px;text-align:center;font-weight:bold;border-radius:5px;margin-bottom:20px;border:1px solid #e6b800}
 
 /* PULSING EMERGENCY CTA */
 .pulse-call {
-  background: var(--red); color: #fff; padding: 20px; border-radius: 50px;
-  display: inline-block; text-decoration: none; font-size: 1.6rem; font-weight: bold;
+  background: var(--red); color: #fff; padding: 20px 45px; border-radius: 50px;
+  display: inline-block; text-decoration: none; font-size: 1.8rem; font-weight: bold;
   animation: pulse 2s infinite; margin: 20px 0; box-shadow: 0 0 0 rgba(211, 47, 47, 0.4);
 }
 @keyframes pulse {
@@ -44,55 +55,91 @@ nav a{color:#fff;padding:15px 20px;display:block;text-decoration:none;font-weigh
   100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(211, 47, 47, 0); }
 }
 
-.service-box {background:var(--light); padding:2rem; border-left:10px solid var(--green); margin:2rem 0; border-radius:8px}
-footer{background:#083d14; color:#fff; padding:3rem 1rem; text-align:center}
+/* EMERGENCY HUB BRIDGE - FIXES ORPHAN PAGE ISSUE */
+.emergency-bridge {background:#fff5f5; border:3px solid var(--red); padding:20px; margin:20px 0; border-radius:10px; text-align:center;}
+.bridge-grid {display:grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap:15px; margin-top:15px;}
+.bridge-grid a {background:var(--dark-green); color:#fff; padding:15px; text-decoration:none; font-weight:bold; border-radius:5px; transition: 0.3s;}
+.bridge-grid a.urgent {background:var(--red);}
+.bridge-grid a:hover {transform: translateY(-3px); background:var(--green)}
+
+.service-box {background:var(--light); padding:2rem; border-left:10px solid var(--green); margin:2rem 0; border-radius:8px; box-shadow:0 4px 10px rgba(0,0,0,0.05)}
+footer{background:var(--dark-green); color:#fff; padding:3rem 1rem; text-align:center}
+.hub-links a{color:#fff; text-decoration:underline; margin:0 10px; font-size:0.9rem}
+
+@media (max-width: 600px) { .pulse-call { font-size: 1.3rem; padding: 15px 25px; } }
 </style>
 </head>
 <body>
 
 <header>
+    <img src="/merthyrimages/logo.png" alt="Welsh Town & Country Logo" style="max-height:70px; border-radius:5px;">
     <h1>Pest Control Merthyr Tydfil</h1>
-    <p>24/7 Professional Response - 07375 303124</p>
+    <p style="font-weight:bold; font-size:1.2rem;">24/7 Specialist Response — 07375 303124</p>
 </header>
 
 <nav>
     <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/bed-bug-removal.html">Bed Bugs</a></li>
-        <li><a href="/merthyr-rodent-control.html">Rodents</a></li>
-        <li><a href="/woodworm.html">Woodworm</a></li>
-        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="bed-bug-removal.html">Bed Bugs</a></li>
+        <li><a href="merthyr-rodent-control.html">Rodents</a></li>
+        <li><a href="woodworm.html">Woodworm</a></li>
+        <li><a href="contact.html">Contact</a></li>
     </ul>
 </nav>
 
-<main style="max-width:1100px; margin:auto; padding:1rem">
-    <div style="background:var(--gold); padding:15px; text-align:center; font-weight:bold; border-radius:5px">
-        🚨 COUNCIL ALTERNATIVE: Same-day service. No 2-week wait times.
+<main>
+    <div class="alert-strip">
+        🚨 STOP WAITING: Merthyr Council wait times are too long. We offer same-day private response across CF47 & CF48.
     </div>
 
-    <div style="text-align:center">
-        <h2>Emergency Valleys Pest Response</h2>
-        <p>Don't wait for the council. We provide rapid, discreet, and guaranteed clearance for homes and businesses.</p>
+    <div style="text-align:center; margin-bottom: 2rem;">
+        <h2>The Valleys' Emergency Pest Alternative</h2>
+        <p>Don't let an infestation grow while waiting for an appointment. We provide rapid, discreet, and 100% guaranteed clearance for homes, landlords, and businesses.</p>
         <a href="tel:+447375303124" class="pulse-call">📞 CALL NOW: 07375 303124</a>
+        <p style="font-weight:bold; color:#555;">Independent • Discreet Unmarked Vans • Awaab's Law Compliant</p>
     </div>
+
+    <section class="emergency-bridge">
+        <h3 style="color:var(--red); margin-top:0;">⚡ Urgent Specialist Services</h3>
+        <p>Direct access to our high-priority emergency clearance and rural pages:</p>
+        <div class="bridge-grid">
+            <a href="bed-bug-removal.html" class="urgent">Bed Bug Heat Treatment</a>
+            <a href="https://brecon.welshtownandcountry.co.uk/llandeilo_rat-catcher.html">Llandeilo Rat Catcher</a>
+            <a href="woodworm.html">Woodworm Certificates</a>
+        </div>
+    </section>
+
+    
 
     <div class="service-box">
         <h3>Why choose us over Merthyr Council?</h3>
         <ul>
-            <li><strong>Immediate Start:</strong> We attend same-day, not next week.</li>
-            <li><strong>24/7 Coverage:</strong> We work evenings and weekends when pests are active.</li>
-            <li><strong>Specialist Heat:</strong> We use <a href="/bed-bug-removal.html">Steam + Chemical Hybrid</a> for 100% bed bug kill rates.</li>
+            <li><strong>Immediate Start:</strong> We attend same-day, not next week. Most council services currently have significant backlogs.</li>
+            <li><strong>24/7 Coverage:</strong> We work evenings and weekends. Rats and bed bugs don't stop at 5 PM, and neither do we.</li>
+            <li><strong>Specialist Technology:</strong> We use <a href="bed-bug-removal.html">120°C Thermal Steam</a> to kill bed bug eggs instantly—something standard council sprays often miss.</li>
+            <li><strong>Privacy Guaranteed:</strong> We attend in unmarked vehicles. No big logos on your driveway alerting the neighbours.</li>
         </ul>
+    </div>
+
+    <div style="background:#e8f5e9; padding:2rem; border-radius:10px; border:1px solid #c8e6c9;">
+        <h3>Landlord & Homeowner Support</h3>
+        <p>We work closely with local residents in <strong>Dowlais, Cyfarthfa, and Aberfan</strong>. We ensure landlords stay compliant with <strong>Awaab's Law</strong> by providing rapid, documented pest clearance that protects tenants and property value.</p>
     </div>
 </main>
 
 <footer>
-    <div style="margin-bottom:20px">
-        <strong>Our Network:</strong> 
-        <a href="https://brecon.welshtownandcountry.co.uk/" style="color:#fff">Brecon Hub</a> | 
-        <a href="https://brecon.welshtownandcountry.co.uk/llandeilo_rat-catcher.html" style="color:#fff">Llandeilo Rat Catcher</a>
+    <div class="hub-links">
+        <p><strong>Regional Service Hubs:</strong></p>
+        <a href="https://brecon.welshtownandcountry.co.uk">Brecon Beacons</a> | 
+        <a href="https://merthyr.welshtownandcountry.co.uk">Merthyr Tydfil</a> | 
+        <a href="https://neath.welshtownandcountry.co.uk">Neath Valley</a> |
+        <a href="https://brecon.welshtownandcountry.co.uk/llandeilo_rat-catcher.html">Llandeilo Specialist</a>
     </div>
-    <p>© 2026 Welsh Town & Country Pest Services</p>
+    <div style="margin-top:20px;">
+        <p>© 2026 Welsh Town & Country Pest Services — Merthyr Hub</p>
+        <p>NPTA Certified | Fully Insured | Direct Technician Access</p>
+    </div>
 </footer>
+
 </body>
 </html>
