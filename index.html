@@ -32,7 +32,7 @@
 
 <style>
 :root{--green:#0b6623;--dark-green:#083d14;--red:#d32f2f;--gold:#ffcc00;--light:#f8f9fa}
-body{font-family:'Segoe UI', Tahoma, sans-serif;margin:0;color:#222;line-height:1.6;background-color:#fff}
+body{font-family:'Segoe UI', Tahoma, sans-serif;margin:0;color:#222;line-height:1.6;background-color:#fff;padding-bottom:60px} /* Space for sticky bar */
 header{background:var(--green);color:#fff;padding:1.5rem;text-align:center;border-bottom:5px solid var(--gold)}
 header img{max-height:70px;border-radius:5px;margin-bottom:10px}
 nav{background:var(--dark-green);position:sticky;top:0;z-index:1000}
@@ -43,11 +43,30 @@ nav a:hover{background:var(--green)}
 main{max-width:1100px;margin:2rem auto;padding:0 1.2rem}
 .alert-strip{background:var(--gold);padding:12px;text-align:center;font-weight:bold;border-radius:5px;margin-bottom:20px;border:1px solid #e6b800}
 
+/* PULSING HERO BUTTON */
 .pulse-call {
   background: var(--red); color: #fff; padding: 20px 45px; border-radius: 50px;
   display: inline-block; text-decoration: none; font-size: 1.8rem; font-weight: bold;
   animation: pulse 2s infinite; margin: 20px 0; box-shadow: 0 0 0 rgba(211, 47, 47, 0.4);
 }
+
+/* FLOATING CIRCLE BUTTON - MOBILE ONLY */
+.floating-call {
+  position: fixed; bottom: 85px; right: 20px; width: 65px; height: 65px;
+  background-color: var(--red); border-radius: 50%; display: none;
+  align-items: center; justify-content: center; z-index: 1001;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3); text-decoration: none;
+  animation: pulse 2s infinite;
+}
+
+/* STICKY BOTTOM BAR - MOBILE ONLY */
+.mobile-sticky-bar {
+  position: fixed; bottom: 0; width: 100%; background: var(--red);
+  color: #fff; text-align: center; height: 60px; line-height: 60px;
+  font-size: 1.4rem; font-weight: bold; text-decoration: none;
+  z-index: 1000; display: none; border-top: 2px solid var(--gold);
+}
+
 @keyframes pulse {
   0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(211, 47, 47, 0.7); }
   70% { transform: scale(1); box-shadow: 0 0 0 20px rgba(211, 47, 47, 0); }
@@ -64,79 +83,91 @@ main{max-width:1100px;margin:2rem auto;padding:0 1.2rem}
 footer{background:var(--dark-green); color:#fff; padding:3rem 1rem; text-align:center}
 .hub-links a{color:#fff; text-decoration:underline; margin:0 10px; font-size:0.9rem}
 
-@media (max-width: 600px) { .pulse-call { font-size: 1.3rem; padding: 15px 25px; } }
+@media (max-width: 768px) { 
+  .pulse-call { font-size: 1.3rem; padding: 15px 25px; } 
+  .floating-call, .mobile-sticky-bar { display: flex; justify-content: center; }
+  .mobile-sticky-bar { display: block; }
+}
 </style>
 </head>
 <body>
 
 <header>
-    <img src="/merthyrimages/logo.png" alt="Welsh Town & Country Logo">
-    <h1>Pest Control Merthyr Tydfil</h1>
-    <p style="font-weight:bold; font-size:1.2rem;">24/7 Specialist Response — 07375 303124</p>
+  <img src="/merthyrimages/logo.png" alt="Welsh Town & Country Logo">
+  <h1>Pest Control Merthyr Tydfil</h1>
+  <p style="font-weight:bold; font-size:1.2rem;">24/7 Specialist Response — 07375 303124</p>
 </header>
 
 <nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="bed-bug-removal.html">Bed Bugs</a></li>
-        <li><a href="merthyr-rodent-control.html">Rodents</a></li>
-        <li><a href="wasp-nest-removal.html">Wasp Nest Removal</a></li>
-        <li><a href="woodworm.html">Woodworm</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="bed-bug-removal.html">Bed Bugs</a></li>
+    <li><a href="merthyr-rodent-control.html">Rodents</a></li>
+    <li><a href="wasp-nest-removal.html">Wasp Nest Removal</a></li>
+    <li><a href="woodworm.html">Woodworm</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
 </nav>
 
 <main>
-    <div class="alert-strip">
-        🚨 STOP WAITING: Merthyr Council wait times are too long. We offer same-day private response across CF47 & CF48.
-    </div>
+  <div class="alert-strip">
+    🚨 STOP WAITING: Merthyr Council wait times are too long. We offer same-day private response across CF47 & CF48.
+  </div>
 
-    <div style="text-align:center; margin-bottom: 2rem;">
-        <h2>The Valleys' Emergency Pest Alternative</h2>
-        <p>Don't let an infestation grow while waiting for an appointment. We provide rapid, discreet, and 100% guaranteed clearance for homes, landlords, and businesses.</p>
-        <a href="tel:+447375303124" class="pulse-call">📞 CALL NOW: 07375 303124</a>
-        <p style="font-weight:bold; color:#555;">Independent • Discreet Unmarked Vans • Awaab's Law Compliant</p>
-    </div>
+  <div style="text-align:center; margin-bottom: 2rem;">
+    <h2>The Valleys' Emergency Pest Alternative</h2>
+    <p>Don't let an infestation grow while waiting for an appointment. We provide rapid, discreet, and 100% guaranteed clearance for homes, landlords, and businesses.</p>
+    <a href="tel:+447375303124" class="pulse-call">📞 CALL NOW: 07375 303124</a>
+    <p style="font-weight:bold; color:#555;">Independent • Discreet Unmarked Vans • Awaab's Law Compliant</p>
+  </div>
 
-    <section class="emergency-bridge">
-        <h3 style="color:var(--red); margin-top:0;">⚡ Urgent Specialist Services</h3>
-        <p>Direct access to our high-priority emergency clearance and rural pages:</p>
-        <div class="bridge-grid">
-            <a href="bed-bug-removal.html" class="urgent">Bed Bug Heat Treatment</a>
-            <a href="wasp-nest-removal.html" class="urgent">Wasp Nest Removal</a>
-            <a href="https://brecon.welshtownandcountry.co.uk/llandeilo_rat-catcher.html">Llandeilo Rat Catcher</a>
-            <a href="woodworm.html">Woodworm Certificates</a>
-        </div>
-    </section>
-
-    <div class="service-box">
-        <h3>Why choose us over Merthyr Council?</h3>
-        <ul>
-            <li><strong>Immediate Start:</strong> We attend same-day, not next week. Most council services currently have significant backlogs.</li>
-            <li><strong>24/7 Coverage:</strong> We work evenings and weekends. Rats, bed bugs, and wasps don't stop at 5 PM, and neither do we.</li>
-            <li><strong>Specialist Technology:</strong> We use <a href="bed-bug-removal.html">120°C Thermal Steam</a> to kill bed bug eggs instantly—something standard council sprays often miss.</li>
-            <li><strong>Privacy Guaranteed:</strong> We attend in unmarked vehicles. No big logos on your driveway alerting the neighbours.</li>
-        </ul>
+  <section class="emergency-bridge">
+    <h3 style="color:var(--red); margin-top:0;">⚡ Urgent Specialist Services</h3>
+    <p>Direct access to our high-priority emergency clearance and rural pages:</p>
+    <div class="bridge-grid">
+      <a href="bed-bug-removal.html" class="urgent">Bed Bug Heat Treatment</a>
+      <a href="wasp-nest-removal.html" class="urgent">Wasp Nest Removal</a>
+      <a href="https://brecon.welshtownandcountry.co.uk/llandeilo_rat-catcher.html">Llandeilo Rat Catcher</a>
+      <a href="woodworm.html">Woodworm Certificates</a>
     </div>
+  </section>
 
-    <div style="background:#e8f5e9; padding:2rem; border-radius:10px; border:1px solid #c8e6c9;">
-        <h3>Landlord & Homeowner Support</h3>
-        <p>We work closely with local residents in <strong>Dowlais, Cyfarthfa, and Aberfan</strong>. We ensure landlords stay compliant with <strong>Awaab's Law</strong> by providing rapid, documented pest clearance that protects tenants and property value.</p>
-    </div>
+  <div class="service-box">
+    <h3>Why choose us over Merthyr Council?</h3>
+    <ul>
+      <li><strong>Immediate Start:</strong> We attend same-day, not next week. Most council services currently have significant backlogs.</li>
+      <li><strong>24/7 Coverage:</strong> We work evenings and weekends. Rats, bed bugs, and wasps don't stop at 5 PM, and neither do we.</li>
+      <li><strong>Specialist Technology:</strong> We use <a href="bed-bug-removal.html">120°C Thermal Steam</a> to kill bed bug eggs instantly—something standard council sprays often miss.</li>
+      <li><strong>Privacy Guaranteed:</strong> We attend in unmarked vehicles. No big logos on your driveway alerting the neighbours.</li>
+    </ul>
+  </div>
+
+  <div style="background:#e8f5e9; padding:2rem; border-radius:10px; border:1px solid #c8e6c9;">
+    <h3>Landlord & Homeowner Support</h3>
+    <p>We work closely with local residents in <strong>Dowlais, Cyfarthfa, and Aberfan</strong>. We ensure landlords stay compliant with <strong>Awaab's Law</strong> by providing rapid, documented pest clearance that protects tenants and property value.</p>
+  </div>
 </main>
 
+<a href="tel:+447375303124" class="floating-call" aria-label="Call Welsh Town and Country Now">
+  <span style="font-size: 30px; color: white;">📞</span>
+</a>
+
+<a href="tel:+447375303124" class="mobile-sticky-bar">
+  📞 Call Ian: 07375 303124
+</a>
+
 <footer>
-    <div class="hub-links">
-        <p><strong>Regional Service Hubs:</strong></p>
-        <a href="https://brecon.welshtownandcountry.co.uk">Brecon Beacons</a> | 
-        <a href="https://merthyr.welshtownandcountry.co.uk">Merthyr Tydfil</a> | 
-        <a href="https://neath.welshtownandcountry.co.uk">Neath Valley</a> |
-        <a href="https://brecon.welshtownandcountry.co.uk/llandeilo_rat-catcher.html">Llandeilo Specialist</a>
-    </div>
-    <div style="margin-top:20px;">
-        <p>© 2026 Welsh Town & Country Pest Services — Merthyr Hub</p>
-        <p>NPTA Certified | Fully Insured | Direct Technician Access</p>
-    </div>
+  <div class="hub-links">
+    <p><strong>Regional Service Hubs:</strong></p>
+    <a href="https://brecon.welshtownandcountry.co.uk">Brecon Beacons</a> | 
+    <a href="https://merthyr.welshtownandcountry.co.uk">Merthyr Tydfil</a> | 
+    <a href="https://neath.welshtownandcountry.co.uk">Neath Valley</a> |
+    <a href="https://brecon.welshtownandcountry.co.uk/llandeilo_rat-catcher.html">Llandeilo Specialist</a>
+  </div>
+  <div style="margin-top:20px;">
+    <p>© 2026 Welsh Town & Country Pest Services — Merthyr Hub</p>
+    <p>safe use of rodentacides Certified | Fully Insured | Direct Technician Access</p>
+  </div>
 </footer>
 
 </body>
