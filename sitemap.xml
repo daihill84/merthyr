@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://merthyr.welshtownandcountry.co.uk/index.html</loc>
+        <loc>https://merthyr.welshtownandcountry.co.uk/</loc>
         <lastmod>2025-12-17</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
@@ -13,7 +13,6 @@
         <changefreq>daily</changefreq>
         <priority>0.95</priority>
     </url>
-
     <url>
         <loc>https://merthyr.welshtownandcountry.co.uk/rat-catcher-tredegar.html</loc>
         <lastmod>2025-12-17</lastmod>
@@ -34,6 +33,12 @@
         <priority>0.90</priority>
     </url>
     <url>
+        <loc>https://merthyr.welshtownandcountry.co.uk/contact.html</loc>
+        <lastmod>2025-12-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.90</priority>
+    </url>
+    <url>
         <loc>https://merthyr.welshtownandcountry.co.uk/merthyr-rodent-control.html</loc>
         <lastmod>2025-12-17</lastmod>
         <changefreq>weekly</changefreq>
@@ -41,16 +46,8 @@
     </url>
 
     <url>
-        <loc>https://merthyr.welshtownandcountry.co.uk/contact.html</loc>
-        <lastmod>2025-12-17</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.90</priority>
-    </url>
-
-    <url>
         <loc>https://merthyr.welshtownandcountry.co.uk/wasp-nest-removal.html</loc>
         <lastmod>2025-12-17</lastmod>
-        <changefreq>weekly</changefreq>
         <priority>0.80</priority>
     </url>
     <url>
