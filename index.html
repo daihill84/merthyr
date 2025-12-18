@@ -19,7 +19,15 @@
   "telephone": "+447375303124",
   "url": "https://merthyr.welshtownandcountry.co.uk/",
   "logo": "https://merthyr.welshtownandcountry.co.uk/merthyrimages/logo.png",
+  "image": "https://merthyr.welshtownandcountry.co.uk/merthyrimages/wasp-nest-removal.jpg",
   "description": "David: Ex-Pestokil trained rural and urban specialist for Merthyr Tydfil. Independent 24/7 alternative to council pest control.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Merthyr Tydfil",
+    "addressRegion": "Wales",
+    "postalCode": "CF47",
+    "addressCountry": "GB"
+  },
   "areaServed": [
     "Merthyr Tydfil CF47", "Dowlais", "Treharris", "Aberfan", "Rhymney", "Ebbw Vale", "Nelson",
     "Troedyrhiw", "Penydarren", "Cefn-coed-y-Cymmer", "Bedlinog", "Quakers Yard", "Thomastown",
@@ -86,6 +94,7 @@ footer{background:var(--dark-green); color:#fff; padding:3rem 1rem; text-align:c
 @media (max-width: 768px) {
   .pulse-call { font-size: 1.4rem; padding: 18px 30px; }
   h1 { font-size: 1.8rem; }
+  .floating-call { display: flex; }
 }
 </style>
 </head>
@@ -97,7 +106,7 @@ footer{background:var(--dark-green); color:#fff; padding:3rem 1rem; text-align:c
   <p style="font-weight:bold; font-size:1.2rem;">David's Direct Line: <a href="tel:+447375303124" style="color:var(--gold); text-decoration:underline;">07375 303124</a></p>
 </header>
 
-<nav>
+<nav aria-label="Main Navigation">
   <ul>
     <li><a href="index.html">Home Hub</a></li>
     <li><a href="merthyr-rodent-control.html">Rats & Mice</a></li>
@@ -110,21 +119,21 @@ footer{background:var(--dark-green); color:#fff; padding:3rem 1rem; text-align:c
 </nav>
 
 <main>
-  <div class="alert-strip">
+  <div class="alert-strip" role="alert">
     🚨 SAME-DAY ACTION: Merthyr council wait times often exceed 14 days. David provides private, emergency response across CF47, CF48 & NP22 today.
   </div>
 
   <div style="text-align:center; margin-bottom: 2rem;">
-    <div style="background:var(--dark-green); color:var(--gold); display:inline-block; padding:5px 15px; border-radius:5px; font-weight:bold; margin-bottom:10px;">David: Ex-Pestokil Specialist • Local Authority</div>
+    <div style="background:var(--dark-green); color:var(--gold); display:inline-block; padding:5px 15px; border-radius:5px; font-weight:bold; margin-bottom:10px;">David: Ex-Pestokil Specialist • Merthyr & Valleys Authority</div>
     <h2>The Heads of the Valleys Emergency Specialist</h2>
-    <p>David brings national-standard <strong>Ex-Pestokil training</strong> to your property. From terrace lofts near <strong>Cyfarthfa Castle</strong> to commercial units on the <strong>A465 corridor</strong>, we provide rapid, discreet, and guaranteed clearance.</p>
-    <a href="tel:+447375303124" class="pulse-call">📞 CALL DAVID: 07375 303124</a>
-    <p style="font-weight:bold; color:#555;">Fully Insured • Senior Field Technician • Unmarked Vehicles</p>
+    <p>David brings national-standard <strong>Ex-Pestokil training</strong> to your property. From terrace lofts near <strong>Cyfarthfa Castle</strong> to commercial units on the <strong>A465 corridor</strong>, David provides rapid, discreet, and guaranteed clearance for all pests.</p>
+    <a href="tel:+447375303124" class="pulse-call" aria-label="Call David for Pest Control">📞 CALL DAVID: 07375 303124</a>
+    <p style="font-weight:bold; color:#555;">Fully Insured • Senior Field Technician • Unmarked Vehicles for Privacy</p>
   </div>
 
   <section class="emergency-bridge">
     <h3 style="color:var(--red); margin-top:0;">⚡ Direct Access to David's Services</h3>
-    <p>Select your pest problem for immediate pricing and treatment details:</p>
+    <p>Select your pest issue for immediate pricing and specialist treatment details:</p>
     <div class="bridge-grid">
       <a href="merthyr-rodent-control.html" class="urgent">Rat Control Experts</a>
       <a href="mouse-catcher-merthyr.html" class="urgent">Mouse Catcher David</a>
@@ -140,35 +149,34 @@ footer{background:var(--dark-green); color:#fff; padding:3rem 1rem; text-align:c
   <div class="service-grid-main">
       <div class="card">
           <h3>Farms & Red Tractor</h3>
-          <p>David provides silage-safe, livestock-friendly rodent management. Full treatment logs provided for <strong>2026 Farm Assurance Audits</strong>.</p>
+          <p>David provides silage-safe, livestock-friendly rodent management. Full treatment logs provided for <strong>2026 Farm Assurance Audits</strong> and compliance.</p>
           <a href="farm-pest-control.html" style="color:var(--red); font-weight:bold;">Farm Services →</a>
       </div>
       <div class="card">
           <h3>Industrial & B2B</h3>
-          <p>Discreet contract pest control for Merthyr industrial estates, warehouses, and factories. Audit-ready reporting for BRC/FSA.</p>
+          <p>Discreet contract pest control for Merthyr industrial estates, warehouses, and factories. Audit-ready reporting for BRC/FSA and environmental health.</p>
           <a href="commercial-pest-control.html" style="color:var(--red); font-weight:bold;">Commercial Hub →</a>
       </div>
       <div class="card">
-          <h3>Landlord Compliance</h3>
-          <p>Helping Merthyr landlords meet <strong>Awaab's Law</strong> standards through rapid response and documented clearance of infestations.</p>
+          <h3>Landlord & Letting Support</h3>
+          <p>Helping Merthyr landlords meet <strong>Awaab's Law</strong> standards through rapid response and documented clearance of infestations for tenants.</p>
           <a href="pest-management.html" style="color:var(--red); font-weight:bold;">Subscription Plans →</a>
       </div>
   </div>
 
   <section style="background:#f0f4f0; padding:2rem; border-radius:10px; border:1px solid #c8e6c9; margin:2rem 0;">
-    <h3>David's "Hub-and-Spoke" Authority</h3>
-    [Image of a hub-and-spoke website architecture for local SEO showing internal linking between homepage and service pages]
-    <p>By operating as a regional hub, David ensures that every technician standard meets the highest national requirements while remaining locally focused on Merthyr Tydfil.</p>
+    <h3>David's Local "Hub-and-Spoke" Authority</h3>
+    <p>By operating as a regional hub based in <strong>Resolven</strong>, David ensures that every technician standard meets the highest national requirements while remaining locally focused on Merthyr Tydfil and the Sirhowy Valley.</p>
     <ul>
       <li><strong>Immediate Start:</strong> David attends today. No 2-week council waiting list.</li>
-      <li><strong>Technical Edge:</strong> David uses <a href="bed-bug-removal.html">120°C Thermal Shock</a> for bed bugs, killing eggs instantly.</li>
-      <li><strong>Discretion:</strong> We use <strong>unmarked vans</strong> to protect your home or business reputation.</li>
+      <li><strong>Technical Edge:</strong> David uses <a href="bed-bug-removal.html">120°C Thermal Shock</a> dry steam for bed bugs, killing eggs instantly where sprays fail.</li>
+      <li><strong>Total Privacy:</strong> David arrives in <strong>unmarked vans</strong> to protect your home or business reputation.</li>
     </ul>
   </section>
 
   <div style="background:#e8f5e9; padding:2rem; border-radius:10px; border:1px solid #c8e6c9;">
-    <h3>Serving CF47, CF48, NP22, NP23</h3>
-    <p>David provides 24/7 coverage to <strong>Dowlais Top</strong>, <strong>Merthyr Vale</strong>, <strong>Treharris</strong>, <strong>Ebbw Vale</strong>, and the <strong>Sirhowy Valley</strong> corridor.</p>
+    <h3>Serving Merthyr CF47, CF48, NP22 & NP23</h3>
+    <p>David provides 24/7 coverage to <strong>Dowlais Top</strong>, <strong>Merthyr Vale</strong>, <strong>Treharris</strong>, <strong>Ebbw Vale</strong>, <strong>Brynmawr</strong>, and the entire <strong>Sirhowy Valley</strong> corridor.</p>
   </div>
 </main>
 
@@ -183,14 +191,14 @@ footer{background:var(--dark-green); color:#fff; padding:3rem 1rem; text-align:c
 <footer>
   <div class="hub-links">
     <p><strong>David's Regional Service Hubs:</strong></p>
-    <a href="https://brecon.welshtownandcountry.co.uk">Brecon Beacons</a> |
-    <a href="https://merthyr.welshtownandcountry.co.uk">Merthyr Hub</a> |
-    <a href="https://neath.welshtownandcountry.co.uk">Neath Valley</a> |
-    <a href="rat-catcher-tredegar.html">Tredegar Hub</a>
+    <a href="https://brecon.welshtownandcountry.co.uk">Brecon Beacons Hub</a> |
+    <a href="https://merthyr.welshtownandcountry.co.uk">Merthyr Tydfil Hub</a> |
+    <a href="https://neath.welshtownandcountry.co.uk">Neath Valley Hub</a> |
+    <a href="rat-catcher-tredegar.html">Tredegar Hub (NP22)</a>
   </div>
   <div style="margin-top:20px;">
-    <p>© 2026 Welsh Town & Country Pest Services — David's Merthyr Hub</p>
-    <p>Ex-Pestokil Specialist | Fully Insured | Resolven Base Hub</p>
+    <p>© 2026 Welsh Town & Country Pest Services — David: Ex-Pestokil Specialist</p>
+    <p>Senior Field Technician | Fully Insured | Resolven Base Hub</p>
   </div>
 </footer>
 
