@@ -26,13 +26,6 @@
         "name": "Welsh Town And Country Pest Services – David (Merthyr Tydfil)",
         "image": "https://merthyr.welshtownandcountry.co.uk/merthyrimages/logo.png",
         "telephone": "+447375303124",
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Merthyr Tydfil",
-            "addressRegion": "Wales",
-            "postalCode": "CF47",
-            "streetAddress": "11 Glynmerthyr Road"
-        },
         "url": "https://merthyr.welshtownandcountry.co.uk/wasp-nest-removal",
         "description": "David: Ex-Pestokil specialist providing safe, fast wasp and hornet removal across Merthyr Tydfil, Rhymney, and Ebbw Vale.",
         "openingHours": "Mo-Su 00:00-23:59",
@@ -49,24 +42,26 @@
 
     <style>
         :root{--green:#0b6623;--dark-green:#083d14;--red:#cc0000;--light:#f8f9fa;--gold:#ffcc00}
-        body { font-family: 'Segoe UI', Tahoma, sans-serif; line-height: 1.6; margin: 0; color: #333; }
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; line-height: 1.6; margin: 0; color: #333; background: #fff; }
         main { max-width: 1000px; margin: 0 auto; padding: 20px; }
         h1, h2, h3 { color: var(--red); }
         .header { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; padding: 15px 20px; background: #fff; border-bottom: 4px solid var(--gold); }
         .logo-container { display: flex; align-items: center; gap: 10px; }
         .logo { height: 60px; }
         .company-name { font-weight: bold; font-size: 1.3em; color: var(--dark-green); }
-        .phone-number a { font-weight: bold; font-size: 1.6em; color: var(--red); text-decoration: none; border: 2px dashed var(--red); padding: 5px 15px; border-radius: 5px; animation: pulse 2s infinite; }
+        .phone-number a { font-weight: bold; font-size: 1.6em; color: var(--red); text-decoration: none; border: 2px dashed var(--red); padding: 5px 15px; border-radius: 5px; animation: pulse 2s infinite; display: inline-block;}
         .navigation ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; background: var(--dark-green); }
         .navigation a { color: white; padding: 12px 18px; text-decoration: none; font-weight: bold; display: block; }
         .navigation a:hover { background: var(--green); color: var(--gold); }
-        h1 { font-size: 2.4em; text-align: center; margin-top: 20px; }
+        h1 { font-size: 2.4em; text-align: center; margin-top: 20px; line-height: 1.2;}
         .center-image { display: block; margin: 25px auto; max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
-        .price-box { background:var(--light); padding:1.5rem; border-left:8px solid var(--red); border-radius:8px; margin:20px 0; font-weight:bold; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
-        .floating-call-button { position: fixed; bottom: 85px; right: 20px; background-color: var(--red); color: white; padding: 18px; border-radius: 50%; font-size: 28px; box-shadow: 0 6px 15px rgba(0,0,0,0.4); z-index: 1000; text-decoration: none; animation: pulse 2s infinite; }
+        .price-box { background:var(--light); padding:1.5rem; border-left:8px solid var(--red); border-radius:8px; margin:20px 0; font-weight:bold; box-shadow: 0 2px 10px rgba(0,0,0,0.05); font-size: 1.2rem;}
+        .floating-call-button { position: fixed; bottom: 85px; right: 20px; background-color: var(--red); color: white; width: 65px; height: 65px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 28px; box-shadow: 0 6px 15px rgba(0,0,0,0.4); z-index: 1000; text-decoration: none; animation: pulse 2s infinite; }
         @keyframes pulse {0% {transform:scale(0.95);box-shadow:0 0 0 0 rgba(204,0,0,0.7)}70% {transform:scale(1);box-shadow:0 0 0 15px rgba(204,0,0,0)}100% {transform:scale(0.95);box-shadow:0 0 0 0 rgba(204,0,0,0)}}
-        footer { background: #222; color: #ccc; padding: 40px 20px; text-align: center; }
+        footer { background: #222; color: #ccc; padding: 40px 20px; text-align: center; border-top: 5px solid var(--gold); }
+        .footer-hubs a { color: var(--gold); text-decoration: underline; margin: 0 10px; font-size: 0.9rem; }
         .specialist-tag{background:var(--dark-green);color:var(--gold);padding:5px 15px;display:inline-block;border-radius:5px;font-size:1rem;margin-bottom:10px;font-weight:bold}
+        @media (max-width: 600px) { .phone-number { width: 100%; text-align: center; margin-top: 10px; } h1 { font-size: 1.8rem; } }
     </style>
 </head>
 
@@ -74,7 +69,7 @@
     <header class="header">
         <div class="logo-container">
             <img src="/merthyrimages/logo.png" alt="Welsh Town And Country David Wasp removal" class="logo">
-            <div><div class="company-name">Welsh Town And Country Pest Services</div></div>
+            <div class="company-name">Welsh Town And Country Pest Services</div>
         </div>
         <div class="contact-info">
             <div class="phone-number"><a href="tel:07375303124">07375 303124</a></div>
@@ -83,66 +78,74 @@
     
     <nav class="navigation">
         <ul>
-            <li><a href="index">Home</a></li>
-            <li><a href="wasp-nest-removal" aria-current="page">Wasp Nest Removal</a></li>
+            <li><a href="index">Home Hub</a></li>
+            <li><a href="wasp-nest-removal" aria-current="page" style="color: var(--gold);">Wasp Nest Removal</a></li>
             <li><a href="merthyr-rodent-control">Rodent Control</a></li>
-            <li><a href="pest-management">Commercial Contracts</a></li>
-            <li><a href="contact">Contact</a></li>
+            <li><a href="pest-management">Compliance & Contracts</a></li>
+            <li><a href="contact">Contact David</a></li>
         </ul>
     </nav>
     
     <main>
         <article>
-            <div class="specialist-tag">David: Ex-Pestokil Specialist • CF47 & NP22 Local</div>
+            <div class="specialist-tag">David: Ex-Pestokil Specialist • CF47 & NP22 local Authority</div>
             <h1>Fast Wasp Nest Removal in Merthyr Tydfil & The Valleys</h1>
-            <p>Facing a wasp infestation? David provides a <strong>same-day wasp nest removal service</strong> across the <strong>Heads of the Valleys</strong> corridor. Whether you are near <strong>Cyfarthfa Castle</strong> or <strong>Parc Bryn Bach</strong> in Tredegar, we safely eliminate wasps and hornets with 100% guaranteed results.</p>
+            
+            <p>Dangerous wasp infestation? David provides a <strong>same-day wasp nest removal service</strong> across the <strong>Heads of the Valleys</strong> corridor. Whether you are near <strong>Cyfarthfa Castle</strong> or <strong>Parc Bryn Bach</strong> in Tredegar, we safely eliminate aggressive wasps and hornets with 100% guaranteed results.</p>
             
             <p style="text-align:center;font-size:1.2rem;background:#fff2f2;padding:20px;border:2px dashed var(--red);border-radius:8px;">
                 <strong>Emergency Wasp Nest? Speak to David:</strong> <a href="tel:07375303124" style="color:var(--red); font-weight:900;">07375 303124</a>
             </p>
 
-            <h2>Transparent Pricing for Wasp Services</h2>
+            [Image showing the structural difference between a Common Wasp and a Hornet]
+
+            <h2>David's Transparent Pricing for Wasps</h2>
             <div class="price-box">
                 £80 – One Wasp Nest<br>
                 £120 – Two or More Nests (Same Visit)<br>
                 £60 – Call-Out if no nest is found<br>
-                ✅ No hidden charges • Guaranteed Result
+                ✅ No hidden charges • Results Guaranteed
             </div>
 
             <h2>Professional Removal Services:</h2>
             <ul>
-                <li><strong>Same-Day Response:</strong> David clears nests from lofts, eaves, and garden walls across Merthyr.</li>
-                <li><strong>Ex-Pestokil Expertise:</strong> National-standard field training for high-risk hornet and wasp removal.</li>
-                <li><strong>Discrete Service:</strong> Unmarked vehicles available to protect property reputation.</li>
-                <li><strong>Safety First:</strong> Fully insured and certified in professional insecticide use.</li>
+                <li><strong>Ex-Pestokil Expertise:</strong> National-standard field training for high-risk hornet and wasp removal in lofts and eaves.</li>
+                <li><strong>Same-Day Response:</strong> David prioritizes aggressive nests near doorways and children's play areas.</li>
+                <li><strong>Discrete Service:</strong> David arrives in <strong>unmarked vehicles</strong> to protect your property's reputation.</li>
+                <li><strong>Safety First:</strong> Fully insured and certified in the safe use of professional insecticides.</li>
             </ul>
 
-            <img src="/merthyrimages/wasp1.png" alt="Wasp Exterminator Merthyr David" class="center-image" loading="lazy">
+            <img src="/merthyrimages/wasp1.png" alt="David treating a wasp nest in Merthyr" class="center-image" loading="lazy">
 
             <h2>Why Choose David's Local Service?</h2>
-            <p>We solve the wasp problems that councils often miss or delay. Using industry-leading equipment, David eliminates infestations fast while ensuring the safety of children and pets. As a local specialist, we know the housing stock near <strong>Dowlais</strong> and <strong>Thomastown</strong> perfectly.</p>
+            <p>We solve the wasp problems that Merthyr councils often struggle to reach in time. Using industry-leading telescopic lances, David eliminates infestations fast while ensuring the safety of pets and neighbors. As a local specialist, we understand the specific housing construction near <strong>Dowlais</strong> and <strong>Thomastown</strong>.</p>
 
-            <h2>Bees: Safe Relocation</h2>
-            <p>David prioritizes ecology. If you have honey bees, we relocate hives safely to local beekeepers without harming them. Always call for a professional identification before attempting DIY.</p>
+            <h2>Bees: Professional Relocation</h2>
+            <p>David is an ecology-conscious specialist. If you have honey bees, we aim to relocate hives safely to local beekeepers rather than destroy them. Always request a professional ID from David before attempting DIY treatment.</p>
 
-            <h2>Coverage Across the Heads of the Valleys:</h2>
+            <h2>Full Valleys Coverage:</h2>
             <p>Serving Merthyr Tydfil CF47 (Dowlais, Treharris, Aberfan), Rhymney NP22, Ebbw Vale NP23, Tredegar, Brynmawr, and Nelson. Same-day local service guaranteed.</p>
 
             <img src="/merthyrimages/waspnest.jpg" alt="Wasp Nest in Attic Merthyr David" class="center-image" loading="lazy">
         </article>
     </main>
 
+    <a href="tel:07375303124" class="floating-call-button" aria-label="Call David Now">📞</a>
+
     <footer>
-        <p>&copy; 2026 Welsh Town And Country Pest Services – David's Merthyr Hub</p>
-        <p>Ex-Pestokil Specialist • 07375 303124 • <a href="mailto:info@welshtownandcountry.co.uk">EMAIL DAVID</a></p>
+        <div class="footer-hubs">
+            <p><strong>Our Regional Service Hubs:</strong></p>
+            <a href="https://brecon.welshtownandcountry.co.uk">Brecon Beacons</a> | 
+            <a href="https://neath.welshtownandcountry.co.uk">Neath Valley</a> | 
+            <a href="https://merthyr.welshtownandcountry.co.uk">Merthyr Hub</a>
+        </div>
+        <p style="margin-top: 20px;">&copy; 2026 Welsh Town & Country Pest Services – David's Merthyr Hub</p>
+        <p>Ex-Pestokil Specialist • 07375 303124 • <a href="mailto:info@welshtownandcountry.co.uk" style="color: var(--gold);">EMAIL DAVID</a></p>
         <div class="social-icons" style="margin-top:20px">
-            <a href="https://www.facebook.com/profile.php?id=61564861332160" target="_blank"><img src="/merthyrimages/facebook_logo.png" alt="Facebook"></a>
-            <a href="https://www.instagram.com/welshtownandcountry.co.uk/" target="_blank"><img src="/merthyrimages/Instagram_icon.png" alt="Instagram"></a>
-            <a href="https://www.linkedin.com/in/welsh-town-and-country-pest-services/" target="_blank"><img src="/merthyrimages/linked-in.jpg" alt="LinkedIn"></a>
-            <a href="https://www.youtube.com/channel/UC1ty_8r3JnreT1uFf5P2hmA" target="_blank"><img src="/merthyrimages/tube-icon.jpg" alt="YouTube"></a>
+            <a href="https://www.facebook.com/profile.php?id=61564861332160" target="_blank"><img src="/merthyrimages/facebook_logo.png" alt="Facebook" style="width: 30px;"></a>
+            <a href="https://www.instagram.com/welshtownandcountry.co.uk/" target="_blank"><img src="/merthyrimages/Instagram_icon.png" alt="Instagram" style="width: 30px;"></a>
+            <a href="https://www.linkedin.com/in/welsh-town-and-country-pest-services/" target="_blank"><img src="/merthyrimages/linked-in.jpg" alt="LinkedIn" style="width: 30px;"></a>
         </div>
     </footer>
-
-    <a href="tel:07375303124" class="floating-call-button">📞</a>
 </body>
 </html>
