@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
     <url>
         <loc>https://merthyr.welshtownandcountry.co.uk/</loc>
         <lastmod>2025-12-30</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
-
     <url>
-        <loc>https://merthyr.welshtownandcountry.co.uk/farm-pest-control.html</loc>
+        <loc>https://merthyr.welshtownandcountry.co.uk/ebbw-vale-pestcontrol.html</loc>
         <lastmod>2025-12-30</lastmod>
-        <changefreq>weekly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>0.95</priority>
     </url>
     <url>
-        <loc>https://merthyr.welshtownandcountry.co.uk/wasp-nest-removal.html</loc>
+        <loc>https://merthyr.welshtownandcountry.co.uk/drainage-rat-control.html</loc>
         <lastmod>2025-12-30</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.95</priority>
@@ -23,104 +21,50 @@
     <url>
         <loc>https://merthyr.welshtownandcountry.co.uk/rat-catcher.html</loc>
         <lastmod>2025-12-30</lastmod>
-        <changefreq>weekly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>0.95</priority>
-    </url>
-
-    <url>
-        <loc>https://merthyr.welshtownandcountry.co.uk/drainage-rat-control.html</loc>
-        <lastmod>2025-12-30</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.90</priority>
     </url>
     <url>
         <loc>https://merthyr.welshtownandcountry.co.uk/mole-catching.html</loc>
         <lastmod>2025-12-30</lastmod>
+        <changefreq>weekly</changefreq>
         <priority>0.90</priority>
     </url>
     <url>
-        <loc>https://merthyr.welshtownandcountry.co.uk/rat-catcher-tredegar.html</loc>
+        <loc>https://merthyr.welshtownandcountry.co.uk/wasp-nest-removal.html</loc>
         <lastmod>2025-12-30</lastmod>
+        <changefreq>weekly</changefreq>
         <priority>0.90</priority>
     </url>
-
     <url>
-        <loc>https://merthyr.welshtownandcountry.co.uk/bed-bug-removal.html</loc>
+        <loc>https://merthyr.welshtownandcountry.co.uk/farm-pest-control.html</loc>
         <lastmod>2025-12-30</lastmod>
-        <priority>0.85</priority>
+        <changefreq>weekly</changefreq>
+        <priority>0.90</priority>
     </url>
     <url>
         <loc>https://merthyr.welshtownandcountry.co.uk/merthyr-rodent-control.html</loc>
         <lastmod>2025-12-30</lastmod>
-        <priority>0.85</priority>
-    </url>
-    <url>
-        <loc>https://merthyr.welshtownandcountry.co.uk/mouse-catcher-merthyr.html</loc>
-        <lastmod>2025-12-30</lastmod>
-        <priority>0.85</priority>
-    </url>
-    <url>
-        <loc>https://merthyr.welshtownandcountry.co.uk/commercial-pest-control.html</loc>
-        <lastmod>2025-12-30</lastmod>
+        <changefreq>weekly</changefreq>
         <priority>0.85</priority>
     </url>
     <url>
         <loc>https://merthyr.welshtownandcountry.co.uk/pest-management.html</loc>
         <lastmod>2025-12-30</lastmod>
-        <priority>0.80</priority>
-    </url>
-
-    <url>
-        <loc>https://merthyr.welshtownandcountry.co.uk/woodworm.html</loc>
-        <lastmod>2025-12-30</lastmod>
-        <priority>0.80</priority>
-    </url>
-    <url>
-        <loc>https://merthyr.welshtownandcountry.co.uk/squirrel-control.html</loc>
-        <lastmod>2025-12-30</lastmod>
-        <priority>0.80</priority>
+        <changefreq>weekly</changefreq>
+        <priority>0.85</priority>
     </url>
     <url>
         <loc>https://merthyr.welshtownandcountry.co.uk/insect-control.html</loc>
         <lastmod>2025-12-30</lastmod>
-        <priority>0.75</priority>
-    </url>
-    <url>
-        <loc>https://merthyr.welshtownandcountry.co.uk/cockroach-bed-bug-flea-control.html</loc>
-        <lastmod>2025-12-30</lastmod>
-        <priority>0.75</priority>
-    </url>
-    <url>
-        <loc>https://merthyr.welshtownandcountry.co.uk/bee-removal.html</loc>
-        <lastmod>2025-12-30</lastmod>
-        <priority>0.70</priority>
-    </url>
-    <url>
-        <loc>https://merthyr.welshtownandcountry.co.uk/mouse-removal.html</loc>
-        <lastmod>2025-12-30</lastmod>
-        <priority>0.70</priority>
-    </url>
-    <url>
-        <loc>https://merthyr.welshtownandcountry.co.uk/moth-silverfish-carpet-biscuit-beetles.html</loc>
-        <lastmod>2025-12-30</lastmod>
-        <priority>0.70</priority>
-    </url>
-    <url>
-        <loc>https://merthyr.welshtownandcountry.co.uk/house-fly-woodworm-mosquito-control.html</loc>
-        <lastmod>2025-12-30</lastmod>
-        <priority>0.70</priority>
-    </url>
-
-    <url>
-        <loc>https://merthyr.welshtownandcountry.co.uk/a465-areas.html</loc>
-        <lastmod>2025-12-30</lastmod>
-        <priority>0.65</priority>
+        <changefreq>monthly</changefreq>
+        <priority>0.80</priority>
     </url>
     <url>
         <loc>https://merthyr.welshtownandcountry.co.uk/contact.html</loc>
         <lastmod>2025-12-30</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.60</priority>
+        <priority>0.70</priority>
     </url>
-
+    <!-- Add more pages as needed; this covers the main indexed ones from crawl -->
 </urlset>
