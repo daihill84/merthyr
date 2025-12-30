@@ -7,6 +7,12 @@
         <priority>1.0</priority>
     </url>
     <url>
+        <loc>https://merthyr.welshtownandcountry.co.uk/pest-control-tredegar.html</loc>
+        <lastmod>2025-12-30</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.95</priority>
+    </url>
+    <url>
         <loc>https://merthyr.welshtownandcountry.co.uk/ebbw-vale-pestcontrol.html</loc>
         <lastmod>2025-12-30</lastmod>
         <changefreq>daily</changefreq>
@@ -66,5 +72,5 @@
         <changefreq>monthly</changefreq>
         <priority>0.70</priority>
     </url>
-    <!-- Add more pages as needed; this covers the main indexed ones from crawl -->
+    <!-- Add more as your site grows; this covers all current indexed pages -->
 </urlset>
