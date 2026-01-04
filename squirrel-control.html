@@ -25,7 +25,7 @@
         {
           "@type": "ListItem",
           "position": 1,
-          "name": "Home",
+          "name": "Merthyr Hub Home",
           "item": "https://merthyr.welshtownandcountry.co.uk/"
         },
         {
@@ -38,12 +38,46 @@
     }
     </script>
 
+    <!-- FAQPage Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is releasing grey squirrels legal in Wales?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No – releasing grey squirrels is illegal under the Wildlife and Countryside Act 1981. We use approved humane kill-traps with instantaneous dispatch."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How quickly can you respond in Merthyr Tydfil?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "David offers same-day inspections and 24/7 emergency response across CF47/CF48 and Heads of the Valleys."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you provide permanent proofing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes – after trapping, we identify and seal all entry points with chew-proof materials for long-term protection."
+          }
+        }
+      ]
+    }
+    </script>
+
     <!-- Enhanced PestControlService Schema -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "PestControlService",
-      "@id": "https://merthyr.welshtownandcountry.co.uk/#business",
+      "@id": "https://merthyr.welshtownandcountry.co.uk/squirrel-control#business",
       "name": "Welsh Town & Country Pest Services – Squirrel Control Merthyr Tydfil",
       "url": "https://merthyr.welshtownandcountry.co.uk/squirrel-control",
       "image": "https://merthyr.welshtownandcountry.co.uk/merthyrimages/logo.png",
@@ -72,14 +106,23 @@
         {"@type": "City", "name": "Troedyrhiw"},
         {"@type": "City", "name": "Penydarren"},
         {"@type": "City", "name": "Gurnos"},
-        {"@type": "City", "name": "Heolgerrig"}
+        {"@type": "City", "name": "Heolgerrig"},
+        {"@type": "City", "name": "Merthyr Vale"},
+        {"@type": "City", "name": "Pant"},
+        {"@type": "City", "name": "Pontsticill"}
       ],
       "openingHoursSpecification": {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
         "opens": "00:00",
         "closes": "23:59"
-      }
+      },
+      "serviceType": ["Squirrel Control","Humane Squirrel Trapping","Loft Proofing","Grey Squirrel Removal","Legal Squirrel Dispatch"],
+      "sameAs": [
+        "https://merthyr.welshtownandcountry.co.uk/",
+        "https://brecon.welshtownandcountry.co.uk/",
+        "https://neath.welshtownandcountry.co.uk/"
+      ]
     }
     </script>
 
@@ -106,6 +149,8 @@
         .street-card h4{color:var(--red);margin-top:0}
         .gbp-box{background:var(--dark); color:#fff; padding:2rem; border-radius:12px; text-align:center; margin:3rem 0;}
         .gbp-btn{background:var(--accent); color:#000; padding:15px 30px; border-radius:8px; text-decoration:none; font-weight:bold; display:inline-block; margin-top:15px;}
+        .hub-links{background:var(--light);padding:1.5rem;border-radius:12px;margin:2rem 0;text-align:center;border:1px solid #ddd}
+        .hub-links a{color:var(--green);font-weight:bold;text-decoration:none;margin:0 10px}
         footer{background:var(--dark);color:#fff;text-align:center;padding:3rem 1rem;border-top:5px solid var(--accent)}
         footer a{color:var(--accent); text-decoration: none; font-weight: bold;}
         .legal-tag {background:var(--red); color:white; padding:6px 15px; border-radius:4px; font-weight:bold; font-size:1rem; display:inline-block; margin-bottom:15px;}
@@ -140,6 +185,13 @@
 </nav>
 
 <main>
+    <div class="hub-links">
+        <strong>Our Network Hubs:</strong>
+        <a href="https://merthyr.welshtownandcountry.co.uk/">Merthyr Tydfil Hub</a> |
+        <a href="https://brecon.welshtownandcountry.co.uk/">Brecon & Powys Hub</a> |
+        <a href="https://neath.welshtownandcountry.co.uk/">Neath Hub</a>
+    </div>
+
     <div class="hero">
         <div class="legal-tag">⚖️ 100% LEGAL & HUMANE COMPLIANCE</div>
         <h2>Woodland Border Squirrel Control<br>Cyfarthfa Park • Thomastown • Treharris • Cefn Coed</h2>
@@ -150,7 +202,7 @@
     <div class="gbp-box">
         <h3>Trusted Local 5-Star Service</h3>
         <p>Solving squirrel problems across Merthyr for homeowners & landlords. Read real reviews from your neighbours.</p>
-        <a href="https://www.google.com/search?q=Welsh+Town+%26+Country+Pest+Services" target="_blank" rel="noopener" class="gbp-btn">View Google Reviews →</a>
+        <a href="https://g.page/r/your-google-business-profile-link" target="_blank" rel="noopener" class="gbp-btn">View Google Reviews →</a>
     </div>
 
     <div class="welfare-box">
@@ -205,14 +257,15 @@
 </main>
 
 <footer>
-    <p><strong>Our Network Hubs:</strong><br>
-        <a href="https://brecon.welshtownandcountry.co.uk/">Brecon LD3</a> | 
-        <a href="https://neath.welshtownandcountry.co.uk/">Neath SA10/SA11</a> | 
-        <a href="https://merthyr.welshtownandcountry.co.uk/">Merthyr Home</a>
-    </p>
+    <div style="margin-bottom: 20px;">
+        <strong>Our Network Hubs:</strong><br>
+        <a href="https://merthyr.welshtownandcountry.co.uk/">Merthyr Tydfil Hub</a> |
+        <a href="https://brecon.welshtownandcountry.co.uk/">Brecon & Powys Hub</a> |
+        <a href="https://neath.welshtownandcountry.co.uk/">Neath Hub</a>
+    </div>
     <p><strong>Welsh Town & Country Pest Services – Merthyr Tydfil Hub</strong></p>
     <p>© 2026 David | Ex-Pestokil Field Technician | Fully Insured | 24/7 Response</p>
-    <p><a href="https://www.google.com/search?q=Welsh+Town+%26+Country+Pest+Services" target="_blank" rel="noopener">⭐⭐⭐⭐⭐ Read Our Google Reviews</a></p>
+    <p><a href="https://g.page/r/your-google-business-profile-link" target="_blank" rel="noopener">⭐⭐⭐⭐⭐ Read Our Google Reviews</a></p>
 </footer>
 
 </body>
