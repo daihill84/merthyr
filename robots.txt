@@ -1,0 +1,27 @@
+# Welsh Town & Country Pest Services Robots.txt
+# Last Updated: 2026-01-07
+
+User-agent: *
+
+# Allow all main service and location pages
+Allow: /
+Allow: /pest-control-merthyr.html
+Allow: /wasp-nest-removal.html
+Allow: /drainage-rat-control.html
+Allow: /mole-catching.html
+
+# Disallow private system or asset folders
+Disallow: /cgi-bin/
+Disallow: /private/
+Disallow: /tmp/
+
+# Prevent indexing of specific hub-only image directories 
+# (keeps them for display only, not image search spam)
+Disallow: /merthyrimages/favicon.ico
+
+# Sitemap location to help Google find all your service pages
+Sitemap: https://merthyr.welshtownandcountry.co.uk/sitemap.xml
+
+# Ensure the Googlebot can see your GBP and Maps data
+User-agent: Googlebot
+Allow: /
