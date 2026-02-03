@@ -31,6 +31,7 @@ RewriteRule ^ - [F,L]
 
 # 7. Merge /hypapages/ → main authority pages (301 redirects)
 # All hyper-local pages folded into pest-control-merthyr.html
+Redirect 301 /test123 https://merthyr.welshtownandcountry.co.uk/pest-control-merthyr.html
 Redirect 301 /hypapages/aberfan-troedyrhiw-cf48.html        https://merthyr.welshtownandcountry.co.uk/pest-control-merthyr.html
 Redirect 301 /hypapages/bargoed-cf81.html                   https://merthyr.welshtownandcountry.co.uk/pest-control-merthyr.html
 Redirect 301 /hypapages/cefn-coed-treharris-cf48-cf46.html  https://merthyr.welshtownandcountry.co.uk/pest-control-merthyr.html
