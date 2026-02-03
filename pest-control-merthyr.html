@@ -113,11 +113,13 @@
         {
           "@type": "FAQPage",
           "mainEntity": [
-            {"@type": "Question","name": "Who is the best rat catcher in Merthyr Tydfil?","acceptedAnswer": {"@type": "Answer","text": "Welsh Town & Country – David, RSPH Level 2 certified ex-Pestokill with 30+ years, specializes in drainage rat control with HD CCTV."}},
-            {"@type": "Question","name": "Do you provide 24/7 emergency pest control?","acceptedAnswer": {"@type": "Answer","text": "Yes – same-day/rapid response across CF47/CF48 for rats, wasps, squirrels."}},
-            {"@type": "Question","name": "Are your methods safe for pets/family?","acceptedAnswer": {"@type": "Answer","text": "Yes – strictly poison-free, humane trapping, targeted treatments."}},
-            {"@type": "Question","name": "Do you do CCTV drain surveys for rats?","acceptedAnswer": {"@type": "Answer","text": "Yes – HD surveys find breaches; install non-return valves for permanent prevention."}},
-            {"@type": "Question","name": "Why choose you over Merthyr Council pest control?","acceptedAnswer": {"@type": "Answer","text": "We treat more pests (moles, squirrels), use poison-free methods (council uses poisons), offer 24/7 no call-out fee (vs. charges/wait times), and fix root causes privately."}}
+            {"@type": "Question","name": "Who is the best rat catcher in Merthyr Tydfil?","acceptedAnswer": {"@type": "Answer","text": "Welsh Town & Country – David, RSPH SUoR certified with 30+ years experience, specializes in drainage rat control with HD CCTV surveys."}},
+            {"@type": "Question","name": "Do you provide 24/7 emergency pest control?","acceptedAnswer": {"@type": "Answer","text": "Yes – same-day or rapid response for rats, wasps, squirrels across CF47. Call directly for fast help."}},
+            {"@type": "Question","name": "Are your methods safe for pets and family?","acceptedAnswer": {"@type": "Answer","text": "Yes – poison-free trapping, targeted treatments, and humane methods protect people, pets, and wildlife."}},
+            {"@type": "Question","name": "Do you conduct CCTV drain surveys for rats?","acceptedAnswer": {"@type": "Answer","text": "Yes – HD surveys find hidden entry points in Merthyr's old drains; we install valves and proof for permanent fixes."}},
+            {"@type": "Question","name": "Do you remove squirrels from lofts?","acceptedAnswer": {"@type": "Answer","text": "Yes – safe removal, loft clearance, and secure proofing to prevent damage and re-entry."}},
+            {"@type": "Question","name": "Do you control wasp nests safely?","acceptedAnswer": {"@type": "Answer","text": "Yes – fast, eco-friendly removal with prevention advice; bee relocation options considered."}},
+            {"@type": "Question","name": "Why choose you over Merthyr Council?","acceptedAnswer": {"@type": "Answer","text": "We treat more pests, use poison-free methods, offer 24/7 no fee, fix roots privately – council limited/charges/poisons."}}
           ]
         }
       ]
@@ -300,10 +302,25 @@
             box-shadow: 0 4px 15px rgba(0,0,0,0.05);
             font-size: 0.98rem;
             line-height: 1.6;
+            transition: 0.3s;
         }
-        .testimonial-card strong { color: var(--dark); display: block; margin-bottom: 0.6rem; }
-        .testimonial-card p { margin: 0.8rem 0; }
-        .stars { color: var(--gold); font-size: 1.4rem; letter-spacing: 3px; margin: 0.8rem 0; }
+        .testimonial-card:hover { transform: translateY(-6px); box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+        .testimonial-card strong {
+            color: var(--dark);
+            display: block;
+            margin-bottom: 0.6rem;
+            font-size: 1.1rem;
+        }
+        .testimonial-card p {
+            margin: 0.8rem 0;
+            font-style: italic;
+        }
+        .stars {
+            color: var(--gold);
+            font-size: 1.4rem;
+            letter-spacing: 3px;
+            margin: 1rem 0 0;
+        }
         .faq-section {
             background: var(--light);
             padding: 2.8rem 2.2rem;
@@ -377,6 +394,7 @@
             nav a { padding: 0.6rem 1rem; font-size: 0.9rem; }
             .map-container iframe { height: 400px; }
             .floating-call { width: 70px; height: 70px; font-size: 2.3rem; bottom: 20px; right: 20px; }
+            .testimonials-grid { grid-template-columns: 1fr; gap: 1.5rem; }
         }
     </style>
 </head>
@@ -449,7 +467,7 @@
 
     <section class="content-block">
         <h2>About David & Our Expertise in Merthyr Tydfil</h2>
-        <p>David ) brings 30+ years + experiance. Fully insured, specializing in Merthyr's unique challenges: aging Victorian drains in Dowlais terraces, wildlife corridors in Gurnos valleys, seasonal wasps near Taff Trail. Prevention-first – we fix roots to stop repeats.</p>
+        <p>David (ex-Pestokill) brings 30+ years of national training and RSPH Level 2 certification. Fully insured, he specializes in Merthyr's unique challenges: aging Victorian drains in Dowlais terraces, wildlife corridors in Gurnos valleys, seasonal wasps near Taff Trail. Prevention-first approach – we fix root causes to stop pests from coming back.</p>
     </section>
 
     <div class="silo-grid">
@@ -483,82 +501,74 @@
 
     <section class="content-block" style="background:var(--light); padding:2.8rem; border-radius:16px; margin:3.5rem 0; text-align:center;">
         <h3>Why We Focus on Causes – Not Just Symptoms in Merthyr</h3>
-        <p>Merthyr pests stem from aging drains, structural gaps, wildlife corridors. Poison baiting temporary; we use CCTV/proofing for permanent, safer results – see our 8 x 5-Star Reviews for proof.</p>
+        <p>Merthyr pests stem from aging drains, structural gaps, wildlife corridors. Poison baiting is temporary; we use CCTV/proofing for permanent, safer results – see our 8 x 5-Star Reviews for proof.</p>
     </section>
 
-   <section class="content-block">
-    <h2>8 Recent 5-Star Customer Testimonials</h2>
-    <p style="text-align:center; color:#555; margin-bottom:2rem; font-size:1.1rem;">
-        Real feedback from Merthyr, Brecon, Sennybridge & Valleys customers – fast, humane, and technical excellence.
-    </p>
+    <section class="content-block">
+        <h2>8 Recent 5-Star Customer Testimonials</h2>
+        <p style="text-align:center; color:#555; margin-bottom:2rem; font-size:1.1rem;">
+            Real feedback from Merthyr, Brecon, Sennybridge & Valleys customers – fast, humane, and technical excellence.
+        </p>
 
-    <div class="testimonials-grid">
-        <!-- Review 1 -->
-        <div class="testimonial-card">
-            <strong>Sara Thomas</strong> – Yesterday<br>
-            <p>"We had some unexpected house guests — mice running around in our Sennybridge home! Called Welsh Town & Country Pest..."</p>
-            <div class="stars">★★★★★</div>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <strong>Sara Thomas</strong> – Yesterday<br>
+                <p>"We had some unexpected house guests — mice running around in our Sennybridge home! Called Welsh Town & Country Pest..."</p>
+                <div class="stars">★★★★★</div>
+            </div>
+
+            <div class="testimonial-card">
+                <strong>Liam Owens</strong> – 2 days ago<br>
+                <p>"Found signs of rats in our garden shed..."</p>
+                <div class="stars">★★★★★</div>
+            </div>
+
+            <div class="testimonial-card">
+                <strong>Chris Griffiths</strong> – 1 week ago<br>
+                <p>"I called Dave about a mole on my property. Mole caught, outstanding service 100%"</p>
+                <div class="stars">★★★★★</div>
+            </div>
+
+            <div class="testimonial-card">
+                <strong>Gagan Bacter</strong> – 5 weeks ago<br>
+                <p>"David from Welsh Town & Country Pest Services sorted out a mole problem in my garden in Merthyr. He uses traditional poison-free trapping..."</p>
+                <div class="stars">★★★★★</div>
+            </div>
+
+            <div class="testimonial-card">
+                <strong>Naomi Hill</strong> – 6 weeks ago<br>
+                <p>"Amazing experiences I called welsh towen and contry pest control out as I had moles on my farm in Merthyr came out..."</p>
+                <div class="stars">★★★★★</div>
+            </div>
+
+            <div class="testimonial-card">
+                <strong>Louise Hill</strong> – 7 weeks ago<br>
+                <p>"I live in Brecon and I had problems with rats in my property I was told to ring Welsh town and country pest service I..."</p>
+                <div class="stars">★★★★★</div>
+            </div>
+
+            <div class="testimonial-card">
+                <strong>Michael Tanner</strong> – 7 weeks ago<br>
+                <p>"Called these guys in the early hours of the morning after failing to get through to some of the other companies based..."</p>
+                <div class="stars">★★★★★</div>
+            </div>
+
+            <div class="testimonial-card">
+                <strong>Julie Sherco</strong> – 7 weeks ago<br>
+                <p>"Great service highly recommend. Thankfully they cover Merthyr Tydfil. Contacted Welsh town & Country. Explained i had..."</p>
+                <div class="stars">★★★★★</div>
+            </div>
         </div>
 
-        <!-- Review 2 -->
-        <div class="testimonial-card">
-            <strong>Liam Owens</strong> – 2 days ago<br>
-            <p>"Found signs of rats in our garden shed..."</p>
-            <div class="stars">★★★★★</div>
-        </div>
-
-        <!-- Review 3 -->
-        <div class="testimonial-card">
-            <strong>Chris Griffiths</strong> – 1 week ago<br>
-            <p>"I called Dave about a mole on my property. Mole caught, outstanding service 100%"</p>
-            <div class="stars">★★★★★</div>
-        </div>
-
-        <!-- Review 4 -->
-        <div class="testimonial-card">
-            <strong>Gagan Bacter</strong> – 5 weeks ago<br>
-            <p>"David from Welsh Town & Country Pest Services sorted out a mole problem in my garden in Merthyr. He uses traditional poison-free trapping..."</p>
-            <div class="stars">★★★★★</div>
-        </div>
-
-        <!-- Review 5 -->
-        <div class="testimonial-card">
-            <strong>Naomi Hill</strong> – 6 weeks ago<br>
-            <p>"Amazing experiences I called welsh towen and contry pest control out as I had moles on my farm in Merthyr came out..."</p>
-            <div class="stars">★★★★★</div>
-        </div>
-
-        <!-- Review 6 -->
-        <div class="testimonial-card">
-            <strong>Louise Hill</strong> – 7 weeks ago<br>
-            <p>"I live in Brecon and I had problems with rats in my property I was told to ring Welsh town and country pest service I..."</p>
-            <div class="stars">★★★★★</div>
-        </div>
-
-        <!-- Review 7 -->
-        <div class="testimonial-card">
-            <strong>Michael Tanner</strong> – 7 weeks ago<br>
-            <p>"Called these guys in the early hours of the morning after failing to get through to some of the other companies based..."</p>
-            <div class="stars">★★★★★</div>
-        </div>
-
-        <!-- Review 8 -->
-        <div class="testimonial-card">
-            <strong>Julie Sherco</strong> – 7 weeks ago<br>
-            <p>"Great service highly recommend. Thankfully they cover Merthyr Tydfil. Contacted Welsh town & Country. Explained i had..."</p>
-            <div class="stars">★★★★★</div>
-        </div>
-    </div>
-
-    <p style="text-align:center; margin-top:2.5rem; font-size:1.1rem;">
-        <a href="https://www.google.com/search?q=Welsh+Town+%26+Country+Pest+Services+Merthyr+Tydfil" 
-           target="_blank" 
-           rel="noopener" 
-           style="color:var(--green); font-weight:800; text-decoration:underline; background:var(--light); padding:12px 24px; border-radius:8px; border:2px solid var(--green); display:inline-block;">
-            See All 8 Reviews on Google →
-        </a>
-    </p>
-</section>
+        <p style="text-align:center; margin-top:2.5rem; font-size:1.1rem;">
+            <a href="https://www.google.com/search?q=Welsh+Town+%26+Country+Pest+Services+Merthyr+Tydfil" 
+               target="_blank" 
+               rel="noopener" 
+               style="color:var(--green); font-weight:800; text-decoration:underline; background:var(--light); padding:12px 24px; border-radius:8px; border:2px solid var(--green); display:inline-block;">
+                See All 8 Reviews on Google →
+            </a>
+        </p>
+    </section>
 
     <section class="content-block">
         <h2>Coverage: Merthyr Tydfil & Surrounding Valleys</h2>
@@ -575,7 +585,7 @@
         <h3 style="text-align:center; color:var(--dark)">Frequently Asked Questions – Pest Control Merthyr Tydfil</h3>
         <div class="faq-item">
             <h4>Who is the best rat catcher in Merthyr Tydfil?</h4>
-            <p>Welsh Town & Country – David, RSPH SUoR certified with 30+ years experiance, specializes in drainage rat control with HD CCTV surveys.</p>
+            <p>Welsh Town & Country – David, RSPH SUoR certified with 30+ years experience, specializes in drainage rat control with HD CCTV surveys.</p>
         </div>
         <div class="faq-item">
             <h4>Do you provide 24/7 emergency pest control?</h4>
