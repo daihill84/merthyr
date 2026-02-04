@@ -1,86 +1,10 @@
-# ================================================
-# .htaccess – merthyr.welshtownandcountry.co.uk
-# Updated February 03, 2026
-# ================================================
-
-# 1. Enable Rewrite Engine
+# Enable Rewrite Engine
 RewriteEngine On
-RewriteBase /
 
-# 2. Force HTTPS (secure redirect)
+# Redirect HTTP to HTTPS
 RewriteCond %{HTTPS} off
-RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
 
-# 3. Force www (non-www → www)
-RewriteCond %{HTTP_HOST} !^www\. [NC]
-RewriteRule ^ https://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
-
-# 4. Enforce trailing slash on directories (SEO consistency)
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_URI} !index\.html$
-RewriteCond %{REQUEST_URI} !(.*)/$
-RewriteRule ^(.*)$ /$1/ [R=301,L]
-
-# 5. Remove duplicate slashes (// → /)
-RewriteCond %{REQUEST_URI} ^(.*)//(.*)$
-RewriteRule . %1/%2 [R=301,L]
-
-# 6. Block common bad bots & scanners (optional – reduces crawl waste)
-RewriteCond %{HTTP_USER_AGENT} (badbot|semrushbot|ahrefsbot|mj12bot|dotbot|petalbot|bytespider|serpstatbot) [NC]
-RewriteRule ^ - [F,L]
-
-# 7. Merge /hypapages/ → main authority pages (301 redirects)
-# All hyper-local pages folded into pest-control-merthyr.html
-Redirect 301 /test123 https://merthyr.welshtownandcountry.co.uk/pest-control-merthyr.html
-Redirect 301 /hypapages/aberfan-troedyrhiw-cf48.html        https://merthyr.welshtownandcountry.co.uk/pest-control-merthyr.html
-Redirect 301 /hypapages/bargoed-cf81.html                   https://merthyr.welshtownandcountry.co.uk/pest-control-merthyr.html
-Redirect 301 /hypapages/cefn-coed-treharris-cf48-cf46.html  https://merthyr.welshtownandcountry.co.uk/pest-control-merthyr.html
-Redirect 301 /hypapages/dowlais-gurnos-cf48.html            https://merthyr.welshtownandcountry.co.uk/pest-control-merthyr.html
-Redirect 301 /hypapages/dowlais-pant-cf48.html              https://merthyr.welshtownandcountry.co.uk/pest-control-merthyr.html
-Redirect 301 /hypapages/gurnos-galon-uchaf-cf47.html        https://merthyr.welshtownandcountry.co.uk/pest-control-merthyr.html
-Redirect 301 /hypapages/merthyr-town-centre-cf47.html       https://merthyr.welshtownandcountry.co.uk/pest-control-merthyr.html
-Redirect 301 /hypapages/nelson-cf46.html                    https://merthyr.welshtownandcountry.co.uk/pest-control-merthyr.html
-Redirect 301 /hypapages/nixonville-merthyr-vale-cf48.html   https://merthyr.welshtownandcountry.co.uk/pest-control-merthyr.html
-Redirect 301 /hypapages/penydarren-georgetown-cf47.html     https://merthyr.welshtownandcountry.co.uk/pest-control-merthyr.html
-Redirect 301 /hypapages/rhymney-ebbw-vale-np22-np23.html    https://merthyr.welshtownandcountry.co.uk/pest-control-tredegar.html
-Redirect 301 /hypapages/rhymney-np22.html                   https://merthyr.welshtownandcountry.co.uk/pest-control-tredegar.html
-Redirect 301 /hypapages/tredegar-town-centre-np22.html      https://merthyr.welshtownandcountry.co.uk/pest-control-tredegar.html
-Redirect 301 /hypapages/trelewis-cf46.html                  https://merthyr.welshtownandcountry.co.uk/pest-control-merthyr.html
-
-# 8. Merge /shops/ → takeaway-pest-control.html
-Redirect 301 /shops/aberdare-takeaway-pest-control.html     https://merthyr.welshtownandcountry.co.uk/takeaway-pest-control.html
-Redirect 301 /shops/merthyr-chinese-pest-control.html       https://merthyr.welshtownandcountry.co.uk/takeaway-pest-control.html
-Redirect 301 /shops/merthyr-chippy-pest-control.html        https://merthyr.welshtownandcountry.co.uk/takeaway-pest-control.html
-Redirect 301 /shops/merthyr-indian-kebab-pest-control.html  https://merthyr.welshtownandcountry.co.uk/takeaway-pest-control.html
-
-# 9. Merge /squirrelpages/ → squirrel-control.html
-Redirect 301 /squirrelpages/aberfan-troedyrhiw-cf48-squirrels.html   https://merthyr.welshtownandcountry.co.uk/squirrel-control.html
-Redirect 301 /squirrelpages/cefn-coed-cf48-squirrels.html            https://merthyr.welshtownandcountry.co.uk/squirrel-control.html
-Redirect 301 /squirrelpages/treharris-cf46-squirrels.html            https://merthyr.welshtownandcountry.co.uk/squirrel-control.html
-
-# 10. Basic security headers
-Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
-Header always set X-Frame-Options "SAMEORIGIN"
-Header always set X-Content-Type-Options "nosniff"
-Header always set Referrer-Policy "strict-origin-when-cross-origin"
-
-# 11. Enable compression (faster load times)
-<IfModule mod_deflate.c>
-    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json
-</IfModule>
-
-# 12. Browser caching (performance boost)
-<IfModule mod_expires.c>
-    ExpiresActive On
-    ExpiresByType image/jpg "access plus 1 year"
-    ExpiresByType image/jpeg "access plus 1 year"
-    ExpiresByType image/gif "access plus 1 year"
-    ExpiresByType image/png "access plus 1 year"
-    ExpiresByType text/css "access plus 1 month"
-    ExpiresByType application/javascript "access plus 1 month"
-</IfModule>
-
-# 13. Custom 404 page (optional – create 404.html in root)
-ErrorDocument 404 /404.html
-
-# END .htaccess
+# Redirect non-WWW to WWW
+RewriteCond %{HTTP_HOST} !^www\.
+RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [R=301,L]

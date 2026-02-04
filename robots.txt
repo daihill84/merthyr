@@ -1,57 +1,27 @@
-# Welsh Town & Country Pest Services robots.txt
-# Last Updated: 2026-02-03
-# Purpose: Guide search engines to important content, block private/system folders,
-#          prevent indexing of thin/duplicate location pages (being merged via 301s),
-#          and reduce crawl budget waste on images/assets.
+# Welsh Town & Country Pest Services Robots.txt
+# Last Updated: 2026-01-07
 
 User-agent: *
-# Allow root and all main service pages
+
+# Allow all main service and location pages
 Allow: /
-Allow: /index.html
 Allow: /pest-control-merthyr.html
-Allow: /rat-catcher.html
+Allow: /wasp-nest-removal.html
 Allow: /drainage-rat-control.html
 Allow: /mole-catching.html
-Allow: /wasp-nest-removal.html
-Allow: /squirrel-control.html
-Allow: /takeaway-pest-control.html
-Allow: /commercial-pest-control.html
-Allow: /farm-pest-control.html
-Allow: /audit-ready-pest-control.html
-Allow: /contact.html
-Allow: /pest-management.html
 
-# Disallow private, system, admin, and temporary folders
+# Disallow private system or asset folders
 Disallow: /cgi-bin/
 Disallow: /private/
 Disallow: /tmp/
-Disallow: /admin/
-Disallow: /login/
-Disallow: /backup/
-Disallow: /test/
-Disallow: /staging/
 
-# Disallow thin/duplicate location pages (being merged into main hubs via 301)
-Disallow: /hypapages/
-Disallow: /shops/
-Disallow: /squirrelpages/
-
-# Prevent indexing of unnecessary image directories & files
-# (reduces image search spam, keeps crawl budget for content)
+# Prevent indexing of specific hub-only image directories 
+# (keeps them for display only, not image search spam)
 Disallow: /merthyrimages/favicon.ico
-Disallow: /merthyrimages/apple_touch_icon.png
-Disallow: /merthyrimages/*.ico$
-Disallow: /merthyrimages/*.xml$
-Disallow: /merthyrimages/*.txt$
 
-# Sitemap – helps Google discover and index your main service pages faster
+# Sitemap location to help Google find all your service pages
 Sitemap: https://merthyr.welshtownandcountry.co.uk/sitemap.xml
 
-# Googlebot-specific (good practice, even though * covers it)
+# Ensure the Googlebot can see your GBP and Maps data
 User-agent: Googlebot
 Allow: /
-Allow: /sitemap.xml
-Disallow: /private/
-Disallow: /tmp/
-Disallow: /admin/
-Disallow: /login/

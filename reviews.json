@@ -1,0 +1,40 @@
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Welsh Town & Country Pest Services",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5",
+    "reviewCount": "6"
+  },
+  "review": [
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Louise Hill" },
+      "datePublished": "2026-01-01",
+      "reviewBody": "I live in Brecon and I had problems with rats in my property. I was told to ring Welsh Town & Country Pest Services. I don’t normally post reviews but this company was super helpful. Call out was super fast, highly recommend.",
+      "reviewRating": { "@type": "Rating", "ratingValue": "5" }
+    },
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Gagan Bacter" },
+      "datePublished": "2026-01-08",
+      "reviewBody": "David from Welsh Town & Country Pest Services sorted out a mole problem in my garden in Merthyr. He uses traditional poison-free trapping which was perfect for us with pets and kids. Turned up quickly, very professional.",
+      "reviewRating": { "@type": "Rating", "ratingValue": "5" }
+    },
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Julie Sherco" },
+      "datePublished": "2026-01-01",
+      "reviewBody": "Great service, highly recommend. Thankfully they cover Merthyr Tydfil. David from Welsh Town & Country Pest Services came out, explained everything step by step, called back as promised.",
+      "reviewRating": { "@type": "Rating", "ratingValue": "5" }
+    },
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Michael Tanner" },
+      "datePublished": "2026-01-01",
+      "reviewBody": "Called Welsh Town & Country Pest Services in the early hours after failing to get through to other companies. We had a rat in our attic! They arrived in just over an hour.",
+      "reviewRating": { "@type": "Rating", "ratingValue": "5" }
+    }
+  ]
+}
