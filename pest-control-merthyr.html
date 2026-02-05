@@ -60,31 +60,129 @@
                 "@type": "Offer",
                 "itemOffered": {
                   "@type": "Service",
-                  "name": "Wasp Nest Removal",
-                  "serviceType": "Wasp nest removal and treatment",
-                  "areaServed": ["Merthyr Tydfil", "Dowlais", "Gurnos", "Treharris", "Aberfan", "Cefn Coed", "Bedlinog", "Vaynor"]
-                }
+                  "name": "Wasp Nest Removal"
+                },
+                "price": "80",
+                "priceCurrency": "GBP"
               },
               {
                 "@type": "Offer",
                 "itemOffered": {
                   "@type": "Service",
-                  "name": "Rat Control",
-                  "serviceType": "Rat control, drainage surveys, and proofing",
-                  "areaServed": ["Merthyr Tydfil", "Dowlais", "Gurnos", "Treharris", "Aberfan", "Cefn Coed", "Bedlinog", "Vaynor"]
-                }
+                  "name": "Rat Control"
+                },
+                "price": "240",
+                "priceCurrency": "GBP"
               },
               {
                 "@type": "Offer",
                 "itemOffered": {
                   "@type": "Service",
-                  "name": "Bed Bug Treatment",
-                  "serviceType": "Bed bug eradication and treatment",
-                  "areaServed": ["Merthyr Tydfil", "Dowlais", "Gurnos", "Treharris", "Aberfan", "Cefn Coed", "Bedlinog", "Vaynor"]
-                }
+                  "name": "Bed Bug Treatment"
+                },
+                "price": "350",
+                "priceCurrency": "GBP"
               }
             ]
-          }
+          },
+          "review": [
+            {
+              "@type": "Review",
+              "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+              },
+              "author": {
+                "@type": "Person",
+                "name": "Sara Thomas"
+              },
+              "reviewBody": "We had some unexpected house guests — mice running around in our Sennybridge home! Fast response and sorted it permanently."
+            },
+            {
+              "@type": "Review",
+              "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+              },
+              "author": {
+                "@type": "Person",
+                "name": "Liam Owens"
+              },
+              "reviewBody": "Found signs of rats in our garden shed. Brilliant service."
+            },
+            {
+              "@type": "Review",
+              "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+              },
+              "author": {
+                "@type": "Person",
+                "name": "Chris Griffiths"
+              },
+              "reviewBody": "Mole caught on my property. Outstanding service 100%."
+            },
+            {
+              "@type": "Review",
+              "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+              },
+              "author": {
+                "@type": "Person",
+                "name": "Gagan Bacter"
+              },
+              "reviewBody": "David sorted a mole problem in my Merthyr garden using traditional methods."
+            },
+            {
+              "@type": "Review",
+              "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+              },
+              "author": {
+                "@type": "Person",
+                "name": "Naomi Hill"
+              },
+              "reviewBody": "Amazing experience with moles on my farm in Merthyr."
+            },
+            {
+              "@type": "Review",
+              "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+              },
+              "author": {
+                "@type": "Person",
+                "name": "Louise Hill"
+              },
+              "reviewBody": "Problems with rats in Brecon property solved quickly."
+            },
+            {
+              "@type": "Review",
+              "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+              },
+              "author": {
+                "@type": "Person",
+                "name": "Michael Tanner"
+              },
+              "reviewBody": "Called in early hours, great service."
+            },
+            {
+              "@type": "Review",
+              "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+              },
+              "author": {
+                "@type": "Person",
+                "name": "Julie Sherco"
+              },
+              "reviewBody": "Great service in Merthyr Tydfil."
+            }
+          ]
         },
         {
           "@type": "FAQPage",
@@ -138,9 +236,7 @@
     </script>
     <style>
         :root{--green:#0b6623;--dark:#083d14;--red:#d32f2f;--light:#f8f9fa;--accent:#ffcc00;--gold:#fff8e1}
-        body{font-family:'Segoe UI',Tahoma,sans-serif;margin:0;color:#222;line-height:1.7;background:#fff;padding-bottom:100px;scroll-behavior:smooth;font-size:16px}
-        .skip-link{position:absolute;top:-100px;left:0;background:#fff;color:#000;padding:8px;z-index:10000;}
-        .skip-link:focus{top:0;}
+        body{font-family:'Segoe UI',Tahoma,sans-serif;margin:0;color:#222;line-height:1.7;background:#fff;padding-bottom:100px;scroll-behavior:smooth}
         .sticky-bar{position:sticky;top:0;background:var(--red);color:#fff;text-align:center;padding:12px;font-weight:bold;z-index:999;box-shadow:0 2px 10px rgba(0,0,0,0.2)}
         header{background:var(--green);color:#fff;text-align:center;padding:1.5rem;border-bottom:4px solid var(--accent)}
         .header-logos{display:flex;justify-content:center;align-items:center;gap:20px;flex-wrap:wrap;margin-bottom:10px}
@@ -149,11 +245,10 @@
         .phone-header{font-size:2.2rem;font-weight:900;color:var(--accent);text-decoration:none;display:block}
         nav{background:var(--dark);padding:10px;text-align:center;position:sticky;top:45px;z-index:998}
         nav ul{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;justify-content:center;gap:15px}
-        nav a{color:#fff;text-decoration:none;font-weight:600;font-size:1rem}
+        nav a{color:#fff;text-decoration:none;font-weight:600;font-size:.9rem}
         nav a:hover{color:var(--accent)}
         main{max-width:1100px;margin:2rem auto;padding:0 1.5rem}
         .hero{background:var(--light);padding:2.5rem;border-left:12px solid var(--red);border-radius:12px;text-align:center;box-shadow:0 4px 15px rgba(0,0,0,0.05)}
-        .hero p.cert{font-weight:bold;color:var(--red);letter-spacing:1px;}
         .main-img{width:100%;max-width:600px;border-radius:12px;margin:20px auto;display:block;border:5px solid var(--green)}
         .big-btn{background:var(--red);color:#fff;padding:20px 40px;border-radius:50px;font-size:1.6rem;font-weight:900;text-decoration:none;display:inline-block;margin:1rem 0;animation:pulse 2s infinite; border: 3px solid white;}
         @keyframes pulse{0%{transform:scale(0.98)}70%{transform:scale(1)}100%{transform:scale(0.98)}}
@@ -192,7 +287,6 @@
     </style>
 </head>
 <body>
-<a href="#main" class="skip-link">Skip to content</a>
 <div class="sticky-bar">🚨 24/7 PEST CONTROL MERTHYR TYDFIL – CALL 07375 303124 🚨</div>
 <header>
     <div class="header-logos">
@@ -214,12 +308,14 @@
 </nav>
 <main id="main">
     <div class="hero">
-        <p class="cert">RSPH SUoR CERTIFIED • 30+ YEARS EXPERIENCE • EX-PESTOKIL TECHNICIAN</p>
+        <p style="font-weight:bold;color:var(--red); letter-spacing: 1px;">RSPH SUoR CERTIFIED • 30+ YEARS EXPERIENCE • EX-PESTOKIL TECHNICIAN</p>
+       
         <p>Need fast <strong>pest control in Merthyr Tydfil</strong> or a reliable <strong>rat catcher Merthyr Tydfil</strong> can trust? <strong>Welsh Town & Country</strong> delivers emergency <strong>pest control Merthyr Tydfil</strong> services for rats, moles, squirrels, wasps, and more across CF47 & CF48. David Hill brings 30+ years of proven expertise for lasting, safe results.</p>
         <div class="us-bias-killer">
             <strong>Why Locals Choose David:</strong> Deep knowledge of Merthyr's Victorian drains, clay soils, and rural edges – solving issues national chains often overlook. See our full range of <a href="/rat-catcher.html">pest control Merthyr Tydfil</a> services.
         </div>
         <img src="https://merthyr.welshtownandcountry.co.uk/merthyrimages/rat-house.webp" alt="Professional pest control service in Merthyr Tydfil home" class="main-img" width="600" height="400" loading="lazy">
+       
         <a href="tel:+447375303124" class="big-btn">📞 CALL DAVID NOW: 07375 303124</a>
     </div>
     <!-- Prominent Pricing Section - Moved higher and styled bolder -->
@@ -243,9 +339,9 @@
             <a href="/hypapages/dowlais-gurnos-cf48.html">Dowlais & Gurnos</a>
             <a href="/hypapages/aberfan-troedyrhiw-cf48.html">Aberfan & Troedyrhiw</a>
             <a href="/hypapages/cefn-coed-treharris-cf48-cf46.html">Cefn Coed & Treharris</a>
-            <a href="/merthyr-town-centre.html">Merthyr Town Centre</a> <!-- Updated placeholder -->
-            <a href="/bedlinog-vaynor.html">Bedlinog & Vaynor</a> <!-- Updated placeholder -->
-            <a href="/heolgerrig-penydarren.html">Heolgerrig & Penydarren</a> <!-- Updated placeholder -->
+            <a href="#">Merthyr Town Centre</a>
+            <a href="#">Bedlinog & Vaynor</a>
+            <a href="#">Heolgerrig & Penydarren</a>
         </div>
         <p>Specialist in local challenges: old drains, hillside tunnelling, and farm proximity.</p>
     </section>
@@ -307,13 +403,13 @@
         <div style="margin-top:20px;">
             <strong>Do you cover all of Merthyr Tydfil?</strong>
             <p>Yes, full coverage across CF47 and CF48 including Dowlais, Gurnos, Treharris, Cefn Coed, Aberfan, Troedyrhiw, Bedlinog, and Vaynor.</p>
-          
+           
             <strong>Are you qualified and insured?</strong>
             <p>Yes – Welsh Town and Country is operated by David Hill, an RSPH SUoR certified, ex-Pestokil technician with 30+ years experience. Fully insured.</p>
-          
+           
             <strong>Do you use poison for rats or moles?</strong>
             <p>We prioritize poison-free methods where possible (e.g., trapping for moles, proofing & drain valves for rats) – safe for pets, livestock, and wildlife like Red Kites.</p>
-          
+           
             <strong>What pests do you handle in Merthyr?</strong>
             <p>Rats (including in drains), mice, moles, squirrels, wasps, bed bugs, and more. Specialize in emergency call-outs and Victorian drainage issues.</p>
         </div>
@@ -324,7 +420,7 @@
 </main>
 <a href="tel:+447375303124" class="floating-call" aria-label="Call David Hill 24/7 Pest Control">📞</a>
 <footer>
-    S<p>© 2026 Welsh Town & Country Pest services | RSPH SUoR Certified | Fully Insured</p>
+    <p>© 2026 Welsh Town & Country | RSPH SUoR Certified | Fully Insured</p>
     <p>Operated by David Hill: 30+ Years Experience | Former Pestokil Technician</p>
     <p>Serving Merthyr Tydfil, Blaenau Gwent, and South Wales Valleys. Email: <strong>welshtownandcountry@gmail.com</strong></p>
     <p><a href="/contact.html">Contact Us</a> | <a href="https://www.google.com/search?q=Welsh+Town+%26+Country+Pest+Services+Merthyr+Tydfil" target="_blank" rel="noopener">Google Business Profile</a></p>
