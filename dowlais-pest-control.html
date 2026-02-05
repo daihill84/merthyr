@@ -155,8 +155,10 @@
         nav a:hover, .current-page { color: var(--gold); background: rgba(255,255,255,0.05); }
 
         main { max-width: 1200px; margin: 2.5rem auto; padding: 0 1.5rem; }
-        .hero-banner { text-align: center; background: white; padding: 3.5rem 2rem; border-radius: 20px; box-shadow: var(--shadow); margin-bottom: 3rem; border-top: 5px solid var(--blue); }
+        .hero-banner { text-align: center; background: white; padding: 2.5rem 2rem; border-radius: 20px; box-shadow: var(--shadow); margin-bottom: 3rem; border-top: 5px solid var(--blue); }
         
+        .hero-img { width: 100%; max-width: 800px; height: auto; border-radius: 15px; margin: 20px auto; border: 4px solid var(--blue); display: block; }
+
         .pulse-btn { background: var(--red); color: #fff; padding: 25px 55px; border-radius: 60px; display: inline-block; text-decoration: none; font-size: 1.9rem; font-weight: 800; animation: pulse 2s infinite; margin: 30px 0; border: 4px solid white; box-shadow: 0 4px 15px rgba(211,47,47,0.4); }
         @keyframes pulse { 0% { transform: scale(0.95); } 70% { transform: scale(1.02); } 100% { transform: scale(0.95); } }
 
@@ -164,8 +166,10 @@
         .usp-item { background: var(--light); padding: 1rem; border-radius: 10px; font-weight: 700; text-align: center; border: 1px solid #ddd; color: var(--dark); }
 
         .silo-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin: 3rem 0; }
-        .silo-card { background: white; border-radius: 12px; overflow: hidden; box-shadow: var(--shadow); border-top: 5px solid var(--green); text-align: center; padding: 2rem; }
-        .silo-card h3 { color: var(--dark); margin-bottom: 1rem; }
+        .silo-card { background: white; border-radius: 12px; overflow: hidden; box-shadow: var(--shadow); border-top: 5px solid var(--green); text-align: center; padding-bottom: 1.5rem; }
+        .silo-img { width: 100%; height: 200px; object-fit: cover; margin-bottom: 1rem; border-bottom: 2px solid #eee; }
+        .silo-card h3 { color: var(--dark); margin-bottom: 0.5rem; padding: 0 1rem; }
+        .silo-card p { padding: 0 1rem; font-size: 0.95rem; }
 
         .content-card, .faq-section { background: white; padding: 3rem; border-radius: 16px; box-shadow: var(--shadow); margin-bottom: 2.5rem; border-top: 8px solid var(--blue); }
         
@@ -218,6 +222,8 @@
         <p style="color: var(--red); font-weight: 800; text-transform: uppercase; letter-spacing: 1px;">Expert Pest Eradication in CF48</p>
         <h2>Solving Infestations in Dowlais, Pant & Gurnos</h2>
         
+        <img src="https://merthyr.welshtownandcountry.co.uk/merthyrimages/rat-house.webp" alt="Professional Rat Control Dowlais" class="hero-img">
+
         <div class="usp-grid">
             <div class="usp-item">30+ Years Trapping Experience</div>
             <div class="usp-item">RSPH SUoR Certified</div>
@@ -232,14 +238,17 @@
 
     <section class="silo-grid">
         <div class="silo-card">
+            <img src="https://merthyr.welshtownandcountry.co.uk/merthyrimages/rat-catcher-merthyr.webp" alt="Rat Catcher Dowlais" class="silo-img">
             <h3>🐀 Rat Control</h3>
             <p>We find the entry point and seal it. Specialist in drainage defects and permanent structural proofing.</p>
         </div>
         <div class="silo-card">
+            <img src="https://merthyr.welshtownandcountry.co.uk/merthyrimages/mole-catching-merthyr.webp" alt="Mole Catching Dowlais" class="silo-img">
             <h3>🦔 Mole Trapping</h3>
             <p>100% poison-free traditional trapping. Professional results safe for pets and wildlife.</p>
         </div>
         <div class="silo-card">
+            <img src="https://merthyr.welshtownandcountry.co.uk/merthyrimages/wasp-nest-removal-merthyr.webp" alt="Wasp Removal Dowlais" class="silo-img">
             <h3>🐝 Wasp Removal</h3>
             <p><strong>£80 Treatment</strong><br>Plus £20 for every extra nest on the same site. Safe, fast eradication.</p>
         </div>
@@ -268,7 +277,7 @@
 
         <div class="faq-item">
             <strong>3. Are you qualified to handle rats and mice?</strong>
-            <p>Yes. David Hill is RSPH SUoR certified (Safe Use of Rodenticides) and has over 30 years of field experience, including time as a technician for Pestokil.</p>
+            <p>Yes. David Hill is RSPH SUoR certified (Safe Use of Rodenticides) and has over 30+ years of field experience, including time as a technician for Pestokil.</p>
         </div>
 
         <div class="faq-item">
@@ -293,7 +302,7 @@
 
 <footer>
     <p>© 2026 Welsh Town & Country | RSPH SUoR Certified | Fully Insured</p>
-    <p>Operated by David Hill: 30+ Years Trapping Experience | Former Pestokil Technician</p>
+    <p>Operated by David Hill: 30+ Years Experience | Former Pestokil Technician</p>
     <p><a href="https://www.google.com/search?q=Welsh+Town+%26+Country+Pest+Services+Merthyr+Tydfil" target="_blank">⭐ View our 5-Star Google Reviews</a></p>
 </footer>
 
