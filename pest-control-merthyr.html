@@ -136,14 +136,15 @@
         .location-grid a {background:var(--dark); color:#fff; padding:10px; border-radius:6px; text-decoration:none; font-weight:bold; text-align:center; transition:0.3s;}
         .location-grid a:hover {background:var(--green);}
         .gbp-box{background:var(--gold);padding:2rem;border-radius:15px;text-align:center;border:2px solid var(--accent);margin:2rem 0}
-        .video-section {margin:3rem 0; text-align:center;}
-        .video-container {position:relative; padding-bottom:177.78%; height:0; overflow:hidden; max-width:100%; background:#000; border-radius:12px; box-shadow:0 4px 15px rgba(0,0,0,0.1);}
-        .video-container iframe {position:absolute; top:0; left:0; width:100%; height:100%;}
+        .video-section, .map-section {margin:3rem 0; text-align:center;}
+        .video-container, .map-container {position:relative; padding-bottom:177.78%; height:0; overflow:hidden; max-width:100%; background:#000; border-radius:12px; box-shadow:0 4px 15px rgba(0,0,0,0.1); border: 3px solid var(--green);}
+        .video-container iframe, .map-container iframe {position:absolute; top:0; left:0; width:100%; height:100%; border:0;}
+        .map-section h2 {color:var(--green); margin-bottom:1rem;}
         footer{background:var(--dark);color:#fff;text-align:center;padding:3rem 1rem;border-top:5px solid var(--accent)}
         footer a{color:var(--accent);text-decoration:none;font-weight:bold}
         .floating-call{position:fixed;bottom:25px;right:25px;background:var(--red);color:#fff;width:70px;height:70px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:2.2rem;text-decoration:none;z-index:9999;box-shadow:0 4px 15px rgba(0,0,0,0.3)}
         .faq-section{background:var(--light); padding:2rem; border-radius:12px; margin:3rem 0; border:2px solid var(--green);}
-        @media (max-width:600px) {.phone-header{font-size:1.8rem;} .big-btn{font-size:1.4rem; padding:15px 30px;}}
+        @media (max-width:600px) {.phone-header{font-size:1.8rem;} .big-btn{font-size:1.4rem; padding:15px 30px;} .map-container {padding-bottom:150%;}}
     </style>
 </head>
 <body>
@@ -213,6 +214,21 @@
             </iframe>
         </div>
         <p><small>Real on-site advice from Welsh Town & Country Pest Services (Feb 2026). Prevent rat entry via gaps, pipes, or drains in CF47/CF48. #pestcontrol #rodentproofing</small></p>
+    </section>
+
+    <!-- Added Google Maps Embed -->
+    <section class="map-section">
+        <h2>Our Service Area: Merthyr Tydfil & Surrounding Valleys</h2>
+        <p>Based in the heart of Merthyr Tydfil (CF47), we cover the full borough and nearby areas quickly for emergency pest issues.</p>
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9870.000000000001!2d-3.3817!3d51.7487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486e2467d020d293%3A0x676997a3c3938495!2sMerthyr%20Tydfil!5e0!3m2!1sen!2suk!4v1700000000000!5m2!1sen!2suk" 
+                title="Google Map of Merthyr Tydfil CF47/CF48 – Pest Control Coverage Area" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+        <p><small>Interactive map centered on Merthyr Tydfil – zoom/pan to see your area (Dowlais, Gurnos, Aberfan, etc.).</small></p>
     </section>
 
     <div class="gbp-box">
