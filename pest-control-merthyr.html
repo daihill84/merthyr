@@ -22,16 +22,14 @@
       "@context": "https://schema.org",
       "@graph": [
         {
-          "@type": "LocalBusiness",
+          "@type": "PestControlService",
           "@id": "https://merthyr.welshtownandcountry.co.uk/pest-control-merthyr.html#organization",
           "name": "Welsh Town & Country Pest Services",
           "image": "https://merthyr.welshtownandcountry.co.uk/merthyrimages/logo.png",
           "url": "https://merthyr.welshtownandcountry.co.uk/pest-control-merthyr.html",
           "telephone": "+447375303124",
-          "priceRange": "££",
           "address": {
             "@type": "PostalAddress",
-            "streetAddress": "Merthyr Tydfil",
             "addressLocality": "Merthyr Tydfil",
             "addressRegion": "Mid Glamorgan",
             "postalCode": "CF47",
@@ -42,92 +40,155 @@
             "latitude": 51.7487,
             "longitude": -3.3817
           },
-          "areaServed": [
-            {
-              "@type": "City",
-              "name": "Merthyr Tydfil"
-            },
-            {
-              "@type": "City",
-              "name": "Dowlais"
-            },
-            {
-              "@type": "City",
-              "name": "Gurnos"
-            },
-            {
-              "@type": "City",
-              "name": "Treharris"
-            },
-            {
-              "@type": "City",
-              "name": "Aberfan"
-            },
-            {
-              "@type": "City",
-              "name": "Cefn Coed"
-            },
-            {
-              "@type": "City",
-              "name": "Bedlinog"
-            },
-            {
-              "@type": "City",
-              "name": "Vaynor"
-            }
-          ],
+          "areaServed": ["Merthyr Tydfil", "Dowlais", "Gurnos", "Treharris", "Aberfan", "Cefn Coed", "Bedlinog", "Vaynor"],
           "aggregateRating": {
             "@type": "AggregateRating",
-            "ratingValue": "5.0",
-            "reviewCount": "8",
-            "bestRating": "5",
+            "ratingValue": "5",
+            "reviewCount": "8"
           },
-          "openingHoursSpecification": [
-            {
-              "@type": "OpeningHoursSpecification",
-              "dayOfWeek": [
-                "Monday",
-                "Tuesday",
-                "Wednesday",
-                "Thursday",
-                "Friday",
-                "Saturday",
-                "Sunday"
-              ],
-              "opens": "00:00",
-              "closes": "23:59"
-            }
-          ],
-          "makesOffer": [
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Wasp Nest Removal",
-                "description": "Professional wasp nest removal service"
+          "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+            "opens": "00:00",
+            "closes": "23:59"
+          },
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Pest Control Services",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Wasp Nest Removal"
+                },
+                "price": "80",
+                "priceCurrency": "GBP"
               },
-              "price": "80",
-              "priceCurrency": "GBP"
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Rat Control"
+                },
+                "price": "240",
+                "priceCurrency": "GBP"
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Bed Bug Treatment"
+                },
+                "price": "350",
+                "priceCurrency": "GBP"
+              }
+            ]
+          },
+          "review": [
+            {
+              "@type": "Review",
+              "datePublished": "2026-02-01",
+              "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+              },
+              "author": {
+                "@type": "Person",
+                "name": "Sara Thomas"
+              },
+              "reviewBody": "We had some unexpected house guests — mice running around in our Sennybridge home! 😅 Called Welsh Town & Country Pest Services. Fast response and sorted it permanently."
             },
             {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Rat Control",
-                "description": "Complete rat control and extermination service"
+              "@type": "Review",
+              "datePublished": "2026-01-31",
+              "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
               },
-              "price": "240",
-              "priceCurrency": "GBP"
+              "author": {
+                "@type": "Person",
+                "name": "Liam Owens"
+              },
+              "reviewBody": "Found signs of rats in our garden shed. Brilliant service."
             },
             {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Bed Bug Treatment",
-                "description": "Professional bed bug treatment and eradication"
+              "@type": "Review",
+              "datePublished": "2026-01-22",
+              "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
               },
-              "price": "350",
-              "priceCurrency": "GBP"
+              "author": {
+                "@type": "Person",
+                "name": "Chris Griffiths"
+              },
+              "reviewBody": "I called Dave about a mole on my property. Mole caught, outstanding service 100%."
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2026-01-01",
+              "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+              },
+              "author": {
+                "@type": "Person",
+                "name": "Gagan Bacter"
+              },
+              "reviewBody": "David from Welsh Town & Country Pest Services sorted out a mole problem in my garden in Merthyr. He uses traditional methods which are safe for pets and wildlife. Highly recommend."
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2025-12-18",
+              "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+              },
+              "author": {
+                "@type": "Person",
+                "name": "Naomi Hill"
+              },
+              "reviewBody": "Amazing experience I called Welsh town and country pest control out as I had moles on my farm in Merthyr came out same day and sorted the problem. Highly recommend."
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2025-12-11",
+              "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+              },
+              "author": {
+                "@type": "Person",
+                "name": "Louise Hill"
+              },
+              "reviewBody": "I live in Brecon and I had problems with rats in my property I was told to ring Welsh town and country pest service I did and they came out quickly and solved the problem."
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2025-12-11",
+              "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+              },
+              "author": {
+                "@type": "Person",
+                "name": "Michael Tanner"
+              },
+              "reviewBody": "Called these guys in the early hours of the morning after failing to get through to some of the other companies based in the area. Great service."
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2025-12-11",
+              "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+              },
+              "author": {
+                "@type": "Person",
+                "name": "Julie Sherco"
+              },
+              "reviewBody": "Great service highly recommend. Thankfully they cover Merthyr Tydfil. Contacted Welsh town & Country. Explained i had a wasp nest in my loft. They came out same day and sorted it."
             }
           ]
         },
@@ -173,7 +234,7 @@
           "name": "IF YOU SEE DAYLIGHT, THEY ARE ALREADY IN",
           "description": "Think your property is secure? If you can see light through a gap, a rodent can get through the door. Highlighting common entry points—from industrial shutters to pipework—that let pests bypass your security. 30+ years experience sealing vulnerabilities permanently.",
           "thumbnailUrl": "https://i.ytimg.com/vi/D1TSby7zKH4/hqdefault.jpg",
-          "uploadDate": "2026-02-05",
+          "uploadDate": "2026-02-05T12:00:00+00:00",
           "duration": "PT1M",
           "embedUrl": "https://www.youtube.com/embed/D1TSby7zKH4",
           "contentUrl": "https://www.youtube.com/watch?v=D1TSby7zKH4"
@@ -182,455 +243,55 @@
     }
     </script>
     <style>
-        :root {
-            --green: #0b6623;
-            --dark: #083d14;
-            --red: #d32f2f;
-            --light: #f8f9fa;
-            --accent: #ffcc00;
-            --gold: #fff8e1;
+        :root{--green:#0b6623;--dark:#083d14;--red:#d32f2f;--light:#f8f9fa;--accent:#ffcc00;--gold:#fff8e1}
+        body{font-family:'Segoe UI',Tahoma,sans-serif;margin:0;color:#222;line-height:1.7;background:#fff;padding-bottom:100px;scroll-behavior:smooth}
+        .sticky-bar{position:sticky;top:0;background:var(--red);color:#fff;text-align:center;padding:12px;font-weight:bold;z-index:999;box-shadow:0 2px 10px rgba(0,0,0,0.2)}
+        header{background:var(--green);color:#fff;text-align:center;padding:1.5rem;border-bottom:4px solid var(--accent)}
+        .header-logos{display:flex;justify-content:center;align-items:center;gap:20px;flex-wrap:wrap;margin-bottom:10px}
+        .logo{max-height:85px;border-radius:8px}
+        .badge{max-height:75px;background:#fff;padding:8px;border-radius:5px;border:2px solid var(--accent)}
+        .phone-header{font-size:2.2rem;font-weight:900;color:var(--accent);text-decoration:none;display:block}
+        nav{background:var(--dark);padding:10px;text-align:center;position:sticky;top:45px;z-index:998}
+        nav ul{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;justify-content:center;gap:15px}
+        nav a{color:#fff;text-decoration:none;font-weight:600;font-size:.9rem}
+        nav a:hover{color:var(--accent)}
+        main{max-width:1100px;margin:2rem auto;padding:0 1.5rem}
+        .hero{background:var(--light);padding:2.5rem;border-left:12px solid var(--red);border-radius:12px;text-align:center;box-shadow:0 4px 15px rgba(0,0,0,0.05)}
+        .main-img{width:100%;max-width:600px;border-radius:12px;margin:20px auto;display:block;border:5px solid var(--green)}
+        .big-btn{background:var(--red);color:#fff;padding:20px 40px;border-radius:50px;font-size:1.6rem;font-weight:900;text-decoration:none;display:inline-block;margin:1rem 0;animation:pulse 2s infinite; border: 3px solid white;}
+        @keyframes pulse{0%{transform:scale(0.98)}70%{transform:scale(1)}100%{transform:scale(0.98)}}
+        .silo-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:30px;margin:3rem 0}
+        .silo-card{background:#fff;border-radius:15px;padding:1.5rem;box-shadow:0 10px 30px rgba(0,0,0,.08);border-top:6px solid var(--green);text-align:center;transition:0.3s}
+        .silo-card:hover{transform:translateY(-5px)}
+        .silo-card img{width:100%;height:220px;object-fit:cover;border-radius:10px;margin-bottom:15px;border-bottom:3px solid var(--green)}
+        .location-reinforcement {background:#f0f7f1; padding:2rem; border-radius:15px; margin:2rem 0; border:1px solid var(--green)}
+        .location-grid {display:grid; grid-template-columns:repeat(auto-fit, minmax(180px,1fr)); gap:10px; margin:1.5rem 0;}
+        .location-grid a {background:var(--dark); color:#fff; padding:10px; border-radius:6px; text-decoration:none; font-weight:bold; text-align:center; transition:0.3s;}
+        .location-grid a:hover {background:var(--green);}
+        .gbp-box, .reviews-section {background:var(--gold);padding:2rem;border-radius:15px;text-align:center;border:2px solid var(--accent);margin:2rem 0}
+        .video-section, .map-section, .pricing-box {margin:3rem 0; text-align:center;}
+        .video-container {position:relative; padding-bottom:177.78%; height:0; overflow:hidden; max-width:100%; background:#000; border-radius:12px; box-shadow:0 4px 15px rgba(0,0,0,0.1);}
+        .map-container {position:relative; padding-bottom:56.25%; height:0; overflow:hidden; max-width:800px; margin:0 auto; background:#000; border-radius:12px; box-shadow:0 4px 15px rgba(0,0,0,0.1); border:3px solid var(--green);}
+        .video-container iframe, .map-container iframe {position:absolute; top:0; left:0; width:100%; height:100%; border:0;}
+        .pricing-box {background:#e8f5e9; padding:1.8rem; border-radius:12px; border:3px solid var(--green); max-width:600px; margin:2rem auto; font-size:1.15rem; box-shadow:0 4px 12px rgba(0,0,0,0.1);}
+        .pricing-box h3 {margin:0 0 0.8rem; color:var(--dark);}
+        .pricing-box strong {color:var(--red);}
+        .review-item {margin:1.2rem 0; font-style:italic; border-left:4px solid var(--green); padding-left:1rem;}
+        .review-item strong {color:var(--dark);}
+        footer{background:var(--dark);color:#fff;text-align:center;padding:3rem 1rem;border-top:5px solid var(--accent)}
+        footer a{color:var(--accent);text-decoration:none;font-weight:bold}
+        .floating-call{position:fixed;bottom:25px;right:25px;background:var(--red);color:#fff;width:70px;height:70px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:2.2rem;text-decoration:none;z-index:9999;box-shadow:0 4px 15px rgba(0,0,0,0.3)}
+        .faq-section{background:var(--light); padding:2rem; border-radius:12px; margin:3rem 0; border:2px solid var(--green);}
+        @media (max-width:600px) {
+            .phone-header{font-size:1.8rem;}
+            .big-btn{font-size:1.4rem; padding:15px 30px;}
+            .map-container {padding-bottom:75%;}
         }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Segoe UI', Tahoma, sans-serif;
-            color: #222;
-            line-height: 1.7;
-            background: #fff;
-            scroll-behavior: smooth;
-        }
-        
-        .sticky-bar {
-            position: sticky;
-            top: 0;
-            background: linear-gradient(135deg, var(--red), #b71c1c);
-            color: #fff;
-            text-align: center;
-            padding: 12px;
-            font-weight: bold;
-            z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
-        }
-        
-        header {
-            background: var(--green);
-            color: #fff;
-            text-align: center;
-            padding: 1.5rem;
-            border-bottom: 4px solid var(--accent);
-        }
-        
-        .header-logos {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 20px;
-            flex-wrap: wrap;
-            margin-bottom: 10px;
-        }
-        
-        .logo {
-            max-height: 85px;
-            border-radius: 8px;
-        }
-        
-        .badge {
-            max-height: 75px;
-            background: #fff;
-            padding: 8px;
-            border-radius: 5px;
-            border: 2px solid var(--accent);
-        }
-        
-        h1 {
-            font-size: 1.8rem;
-            margin: 1rem 0;
-            line-height: 1.3;
-        }
-        
-        .phone-header {
-            font-size: 2.2rem;
-            font-weight: 900;
-            color: var(--accent);
-            text-decoration: none;
-            display: block;
-            margin: 1rem 0;
-        }
-        
-        nav {
-            background: var(--dark);
-            padding: 10px;
-            text-align: center;
-            position: sticky;
-            top: 45px;
-            z-index: 998;
-        }
-        
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 15px;
-        }
-        
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: .9rem;
-            padding: 5px 10px;
-            border-radius: 4px;
-            transition: background 0.3s;
-        }
-        
-        nav a:hover {
-            background: rgba(255,255,255,0.1);
-            color: var(--accent);
-        }
-        
-        main {
-            max-width: 1100px;
-            margin: 2rem auto;
-            padding: 0 1.5rem;
-        }
-        
-        .hero {
-            background: var(--light);
-            padding: 2.5rem;
-            border-left: 12px solid var(--red);
-            border-radius: 12px;
-            text-align: center;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-            margin-bottom: 2rem;
-        }
-        
-        .main-img {
-            width: 100%;
-            max-width: 600px;
-            height: auto;
-            border-radius: 12px;
-            margin: 20px auto;
-            display: block;
-            border: 5px solid var(--green);
-        }
-        
-        .big-btn {
-            background: var(--red);
-            color: #fff;
-            padding: 20px 40px;
-            border-radius: 50px;
-            font-size: 1.6rem;
-            font-weight: 900;
-            text-decoration: none;
-            display: inline-block;
-            margin: 1rem 0;
-            animation: pulse 2s infinite;
-            border: 3px solid white;
-            transition: transform 0.3s;
-        }
-        
-        .big-btn:hover {
-            transform: scale(1.05);
-        }
-        
-        @keyframes pulse {
-            0% { transform: scale(0.98); }
-            70% { transform: scale(1); }
-            100% { transform: scale(0.98); }
-        }
-        
-        .pricing-section {
-            background: linear-gradient(135deg, var(--red), #b71c1c);
-            color: #fff;
-            padding: 2.5rem;
-            border-radius: 12px;
-            margin: 2rem 0;
-            text-align: center;
-            box-shadow: 0 6px 20px rgba(0,0,0,0.2);
-        }
-        
-        .pricing-section h2 {
-            font-size: 2rem;
-            margin-bottom: 1.5rem;
-            color: var(--accent);
-        }
-        
-        .pricing-item {
-            margin: 1rem 0;
-            font-size: 1.3rem;
-            padding: 10px;
-            background: rgba(255,255,255,0.1);
-            border-radius: 8px;
-        }
-        
-        .pricing-item strong {
-            font-size: 1.5rem;
-            color: var(--accent);
-        }
-        
-        .location-reinforcement {
-            background: #f0f7f1;
-            padding: 2rem;
-            border-radius: 15px;
-            margin: 2rem 0;
-            border: 1px solid var(--green);
-        }
-        
-        .location-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-            gap: 10px;
-            margin: 1.5rem 0;
-        }
-        
-        .location-grid a {
-            background: var(--dark);
-            color: #fff;
-            padding: 10px;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: bold;
-            text-align: center;
-            transition: 0.3s;
-        }
-        
-        .location-grid a:hover {
-            background: var(--green);
-            transform: translateY(-2px);
-        }
-        
-        .video-section, .map-section {
-            margin: 3rem 0;
-            text-align: center;
-        }
-        
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%;
-            height: 0;
-            overflow: hidden;
-            max-width: 100%;
-            background: #000;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            margin: 20px 0;
-        }
-        
-        .map-container {
-            position: relative;
-            padding-bottom: 56.25%;
-            height: 0;
-            overflow: hidden;
-            max-width: 800px;
-            margin: 0 auto;
-            background: #000;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            border: 3px solid var(--green);
-        }
-        
-        .video-container iframe, .map-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: 0;
-        }
-        
-        .gbp-box {
-            background: var(--gold);
-            padding: 2rem;
-            border-radius: 15px;
-            text-align: center;
-            border: 2px solid var(--accent);
-            margin: 2rem 0;
-        }
-        
-        .silo-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin: 3rem 0;
-        }
-        
-        .silo-card {
-            background: #fff;
-            border-radius: 15px;
-            padding: 1.5rem;
-            box-shadow: 0 10px 30px rgba(0,0,0,.08);
-            border-top: 6px solid var(--green);
-            text-align: center;
-            transition: 0.3s;
-        }
-        
-        .silo-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 40px rgba(0,0,0,.15);
-        }
-        
-        .silo-card img {
-            width: 100%;
-            height: 220px;
-            object-fit: cover;
-            border-radius: 10px;
-            margin-bottom: 15px;
-            border-bottom: 3px solid var(--green);
-        }
-        
-        .faq-section {
-            background: var(--light);
-            padding: 2rem;
-            border-radius: 12px;
-            margin: 3rem 0;
-            border: 2px solid var(--green);
-        }
-        
-        .faq-section h2 {
-            margin-bottom: 1.5rem;
-            color: var(--dark);
-        }
-        
-        .faq-section strong {
-            display: block;
-            margin-top: 1.5rem;
-            color: var(--red);
-            font-size: 1.1rem;
-        }
-        
-        .faq-section p {
-            margin: 0.5rem 0 1rem 0;
-            padding-left: 1rem;
-            border-left: 3px solid var(--green);
-        }
-        
-        footer {
-            background: var(--dark);
-            color: #fff;
-            text-align: center;
-            padding: 3rem 1rem;
-            border-top: 5px solid var(--accent);
-            margin-top: 2rem;
-        }
-        
-        footer a {
-            color: var(--accent);
-            text-decoration: none;
-            font-weight: bold;
-        }
-        
-        footer a:hover {
-            text-decoration: underline;
-        }
-        
-        .floating-call {
-            position: fixed;
-            bottom: 25px;
-            right: 25px;
-            background: var(--red);
-            color: #fff;
-            width: 70px;
-            height: 70px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2.2rem;
-            text-decoration: none;
-            z-index: 9999;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-            transition: transform 0.3s;
-        }
-        
-        .floating-call:hover {
-            transform: scale(1.1);
-        }
-        
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 1.5rem;
-            }
-            
-            .phone-header {
-                font-size: 1.8rem;
-            }
-            
-            .big-btn {
-                font-size: 1.4rem;
-                padding: 15px 30px;
-            }
-            
-            .pricing-section h2 {
-                font-size: 1.5rem;
-            }
-            
-            .pricing-item {
-                font-size: 1.1rem;
-            }
-            
-            .pricing-item strong {
-                font-size: 1.3rem;
-            }
-            
-            nav ul {
-                gap: 10px;
-            }
-            
-            nav a {
-                font-size: 0.8rem;
-                padding: 4px 8px;
-            }
-            
-            .location-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            
-            .silo-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .hero {
-                padding: 1.5rem;
-            }
-        }
-        
-        @media (max-width: 480px) {
-            .header-logos {
-                gap: 10px;
-            }
-            
-            .logo {
-                max-height: 70px;
-            }
-            
-            .badge {
-                max-height: 60px;
-            }
-            
-            .location-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .map-container {
-                padding-bottom: 75%;
-            }
-            
-            .floating-call {
-                width: 60px;
-                height: 60px;
-                font-size: 1.8rem;
-                bottom: 20px;
-                right: 20px;
-            }
-        }
+        /* Make pricing more prominent */
+        .pricing-section {background:var(--red); color:#fff; padding:2.5rem; border-radius:12px; margin:2rem 0; text-align:center; box-shadow:0 6px 20px rgba(0,0,0,0.2);}
+        .pricing-section h2 {font-size:2rem; margin-bottom:1.5rem; color:var(--accent);}
+        .pricing-item {margin:1rem 0; font-size:1.3rem;}
+        .pricing-item strong {font-size:1.5rem;}
     </style>
 </head>
 <body>
@@ -656,16 +317,16 @@
 <main id="main">
     <div class="hero">
         <p style="font-weight:bold;color:var(--red); letter-spacing: 1px;">RSPH SUoR CERTIFIED • 30+ YEARS EXPERIENCE • EX-PESTOKIL TECHNICIAN</p>
-       
+      
         <p>Need fast <strong>pest control in Merthyr Tydfil</strong> or a reliable <strong>rat catcher Merthyr Tydfil</strong> can trust? <strong>Welsh Town & Country</strong> delivers emergency <strong>pest control Merthyr Tydfil</strong> services for rats, moles, squirrels, wasps, and more across CF47 & CF48. David Hill brings 30+ years of proven expertise for lasting, safe results.</p>
         <div class="us-bias-killer">
             <strong>Why Locals Choose David:</strong> Deep knowledge of Merthyr's Victorian drains, clay soils, and rural edges – solving issues national chains often overlook. See our full range of <a href="/rat-catcher.html">pest control Merthyr Tydfil</a> services.
         </div>
         <img src="https://merthyr.welshtownandcountry.co.uk/merthyrimages/rat-house.webp" alt="Professional pest control service in Merthyr Tydfil home" class="main-img" width="600" height="400" loading="lazy">
-       
+      
         <a href="tel:+447375303124" class="big-btn">📞 CALL DAVID NOW: 07375 303124</a>
     </div>
-
+    <!-- Prominent Pricing Section - Moved higher and styled bolder -->
     <section class="pricing-section">
         <h2>Transparent Pest Control Pricing</h2>
         <div class="pricing-item">
@@ -677,9 +338,8 @@
         <div class="pricing-item">
             <strong>Bed Bug Treatment:</strong> £350 starting (per property, depending on infestation size). Heat and insecticide options for complete eradication. <strong>Multiple treatments usually needed.</strong>
         </div>
-        <p style="font-size:1.1rem; margin-top:1.5rem; color: rgba(255,255,255,0.9);">Prices may vary based on property size and infestation severity. Call for a free quote: 07375 303124</p>
+        <p style="font-size:1.1rem; margin-top:1.5rem;">Prices may vary based on property size and infestation severity. Call for a free quote: 07375 303124</p>
     </section>
-
     <section class="location-reinforcement">
         <h2>Full Coverage Across Merthyr Tydfil Borough</h2>
         <p>Rapid response throughout CF47/CF48 and surrounds:</p>
@@ -693,7 +353,6 @@
         </div>
         <p>Specialist in local challenges: old drains, hillside tunnelling, and farm proximity.</p>
     </section>
-
     <section class="video-section">
         <h2>Rodent Proofing Tip: "If You See Daylight, They're Already In"</h2>
         <p>David shows how rodents exploit even tiny gaps where light shines through (doors, industrial shutters, pipework). With 30+ years experience, we identify these entry points and seal them permanently to stop rats bypassing your defences – especially relevant for Merthyr's older homes, farms, and drainage systems.</p>
@@ -707,9 +366,8 @@
                 loading="lazy">
             </iframe>
         </div>
-        <p><small>Real on-site advice from Welsh Town & Country Pest Services (Feb 2026). Prevent rat entry via gaps, pipes, or drains in CF47/CF48.</small></p>
+        <p><small>Real on-site advice from Welsh Town & Country Pest Services (February 2026). Prevent rat entry via gaps, pipes, or drains in CF47/CF48. #pestcontrol #rodentproofing</small></p>
     </section>
-
     <section class="map-section">
         <h2>Service Area: Merthyr Tydfil CF47 & CF48</h2>
         <p>We cover the entire Merthyr Tydfil borough and surrounding valleys with fast 24/7 response. View our coverage area below:</p>
@@ -723,14 +381,47 @@
         </div>
         <p><small>Zoom in to see Dowlais, Gurnos, Aberfan, Treharris, and more – we serve them all quickly.</small></p>
     </section>
-
     <div class="gbp-box">
         <h3>5-Star Rated Local Expert (2026)</h3>
         <p>Rated <strong>5★</strong> by local Merthyr customers on Google</p>
         <p>Trusted for emergency rat issues, mole clearance, and drain surveys across the Valleys.</p>
         <a href="https://www.google.com/search?q=Welsh+Town+%26+Country+Pest+Services+Merthyr+Tydfil" target="_blank" rel="noopener" style="background:var(--accent); color:var(--dark); padding:12px 25px; border-radius:8px; text-decoration:none; font-weight:bold; display:inline-block; margin-top:10px;">View Google Reviews →</a>
     </div>
-
+    <section class="reviews-section">
+        <h2>What Our Customers Say</h2>
+        <div class="review-item">
+            <strong>Sara Thomas (2026-02-01):</strong> We had some unexpected house guests — mice running around in our Sennybridge home! 😅 Called Welsh Town & Country Pest Services. Fast response and sorted it permanently.<br>
+            <strong>Owner response:</strong> Thanks 😊 glad we could help
+        </div>
+        <div class="review-item">
+            <strong>Liam Owens (2026-01-31):</strong> ⭐️⭐️⭐️⭐️⭐️ Found signs of rats in our garden shed. Brilliant service.<br>
+            <strong>Owner response:</strong> Thanks glad we could help ☺️
+        </div>
+        <div class="review-item">
+            <strong>Chris Griffiths (2026-01-22):</strong> I called Dave about a mole on my property. Mole caught, outstanding service 100%.<br>
+            <strong>Owner response:</strong> Thanks Chris, glad we could help ☺️
+        </div>
+        <div class="review-item">
+            <strong>Gagan Bacter (2026-01-01):</strong> David from Welsh Town & Country Pest Services sorted out a mole problem in my garden in Merthyr. He uses traditional methods which are safe for pets and wildlife. Highly recommend.<br>
+            <strong>Owner response:</strong> Glad we could help ☺️
+        </div>
+        <div class="review-item">
+            <strong>Naomi Hill (2025-12-18):</strong> Amazing experience I called Welsh town and country pest control out as I had moles on my farm in Merthyr came out same day and sorted the problem. Highly recommend.<br>
+            <strong>Owner response:</strong> Glad we could help ☺️
+        </div>
+        <div class="review-item">
+            <strong>Louise Hill (2025-12-11):</strong> I live in Brecon and I had problems with rats in my property I was told to ring Welsh town and country pest service I did and they came out quickly and solved the problem.<br>
+            <strong>Owner response:</strong> Thanks 😊, Glad we can help
+        </div>
+        <div class="review-item">
+            <strong>Michael Tanner (2025-12-11):</strong> Called these guys in the early hours of the morning after failing to get through to some of the other companies based in the area. Great service.<br>
+            <strong>Owner response:</strong> Thanks 😊, Glad we can help
+        </div>
+        <div class="review-item">
+            <strong>Julie Sherco (2025-12-11):</strong> Great service highly recommend. Thankfully they cover Merthyr Tydfil. Contacted Welsh town & Country. Explained i had a wasp nest in my loft. They came out same day and sorted it.<br>
+            <strong>Owner response:</strong> Thanks 😊, Glad we can help
+        </div>
+    </section>
     <section class="silo-grid">
         <div class="silo-card">
             <img src="https://merthyr.welshtownandcountry.co.uk/merthyrimages/rat-droppings.webp" alt="Rat control and drain survey Merthyr" width="300" height="220" loading="lazy">
@@ -750,29 +441,27 @@
             <p>Loft proofing, wasp nests, bed bugs – full exclusion & humane removal.</p>
         </div>
     </section>
-
     <section class="faq-section">
         <h2>Frequently Asked Questions</h2>
-        <strong>Do you cover all of Merthyr Tydfil?</strong>
-        <p>Yes, full coverage across CF47 and CF48 including Dowlais, Gurnos, Treharris, Cefn Coed, Aberfan, Troedyrhiw, Bedlinog, and Vaynor.</p>
-       
-        <strong>Are you qualified and insured?</strong>
-        <p>Yes – Welsh Town and Country is operated by David Hill, an RSPH SUoR certified, ex-Pestokil technician with 30+ years experience. Fully insured.</p>
-       
-        <strong>Do you use poison for rats or moles?</strong>
-        <p>We prioritize poison-free methods where possible (e.g., trapping for moles, proofing & drain valves for rats) – safe for pets, livestock, and wildlife like Red Kites.</p>
-       
-        <strong>What pests do you handle in Merthyr?</strong>
-        <p>Rats (including in drains), mice, moles, squirrels, wasps, bed bugs, and more. Specialize in emergency call-outs and Victorian drainage issues.</p>
+        <div style="margin-top:20px;">
+            <strong>Do you cover all of Merthyr Tydfil?</strong>
+            <p>Yes, full coverage across CF47 and CF48 including Dowlais, Gurnos, Treharris, Cefn Coed, Aberfan, Troedyrhiw, Bedlinog, and Vaynor.</p>
+          
+            <strong>Are you qualified and insured?</strong>
+            <p>Yes – Welsh Town and Country is operated by David Hill, an RSPH SUoR certified, ex-Pestokil technician with 30+ years experience. Fully insured.</p>
+          
+            <strong>Do you use poison for rats or moles?</strong>
+            <p>We prioritize poison-free methods where possible (e.g., trapping for moles, proofing & drain valves for rats) – safe for pets, livestock, and wildlife like Red Kites.</p>
+          
+            <strong>What pests do you handle in Merthyr?</strong>
+            <p>Rats (including in drains), mice, moles, squirrels, wasps, bed bugs, and more. Specialize in emergency call-outs and Victorian drainage issues.</p>
+        </div>
     </section>
-
     <p style="text-align:center; font-size:1rem; margin:2rem 0; color:#555;">
         Welsh Town & Country is a locally owned and operated pest control company proudly serving Merthyr Tydfil and the surrounding South Wales Valleys.
     </p>
 </main>
-
 <a href="tel:+447375303124" class="floating-call" aria-label="Call David Hill 24/7 Pest Control">📞</a>
-
 <footer>
     <p>© 2026 Welsh Town & Country | RSPH SUoR Certified | Fully Insured</p>
     <p>Operated by David Hill: 30+ Years Experience | Former Pestokil Technician</p>
