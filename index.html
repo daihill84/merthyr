@@ -79,7 +79,7 @@
     }
     </script>
     
-    <style>
+   <style>
 :root {
     --green: #0b6623;
     --dark: #083d14;
@@ -184,6 +184,7 @@ main { max-width:1200px; margin:2.5rem auto; padding:0 1.5rem; }
 /* Hub / Silo Cards */
 .hub-grid, .silo-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:30px; margin:3rem 0; }
 .hub-card, .silo-card { background:white; border-radius:16px; box-shadow:0 8px 30px rgba(0,0,0,0.12); overflow:hidden; position:relative; transition:var(--transition); }
+.hub-card::before, .silo-card::before { content:""; position:absolute; top:0; left:0; right:0; height:8px; background:linear-gradient(90deg,var(--green)0%,var(--gold)100%); }
 .hub-card:hover, .silo-card:hover { transform:translateY(-10px); box-shadow:0 15px 40px rgba(0,0,0,0.2); }
 .hub-card img, .silo-card img { width:100%; height:240px; object-fit:cover; transition:var(--transition); }
 .hub-card:hover img, .silo-card:hover img { transform:scale(1.03); }
@@ -250,6 +251,7 @@ img { height:auto; max-width:100%; }
 @media (prefers-reduced-motion:reduce){ .pulse-btn, .floating-call { animation:none; } }
 @media print { .floating-call, .sticky-bar { display:none; } body{ background:white; } }
 </style>
+
 
 </head>
 <body itemscope itemtype="https://schema.org/WebPage">
