@@ -73,7 +73,6 @@
 }
 </script>
 
-<!-- Styles – Aligned with your other pages (Merthyr hub, Dowlais, Tredegar) -->
 <style>
 :root {
     --green:#0b6623;
@@ -85,13 +84,8 @@
     --shadow:0 4px 12px rgba(0,0,0,0.1);
     --transition:all 0.3s ease;
 }
-
-*,
-*::before,
-*::after { box-sizing:border-box; }
-
+* { box-sizing:border-box; margin:0; padding:0; }
 html { scroll-behavior:smooth; }
-
 body {
     margin:0;
     font-family:'Segoe UI',system-ui,-apple-system,BlinkMacSystemFont,sans-serif;
@@ -100,14 +94,7 @@ body {
     background:linear-gradient(135deg,#f8f9fa 0%,#e9ecef 100%);
     min-height:100vh;
 }
-
-/* Accessibility focus */
-:focus-visible {
-    outline:3px solid var(--gold);
-    outline-offset:3px;
-}
-
-/* Skip link */
+:focus-visible { outline:3px solid var(--gold); outline-offset:3px; }
 .skip-link {
     position:absolute;
     top:-40px;
@@ -119,8 +106,6 @@ body {
     text-decoration:none;
 }
 .skip-link:focus { top:0; }
-
-/* Sticky emergency bar */
 .sticky-bar {
     position:fixed;
     top:0;
@@ -136,7 +121,6 @@ body {
     transition:transform 0.3s ease;
 }
 .sticky-bar.hidden { transform:translateY(-100%); }
-
 .sticky-bar a {
     color:#fff;
     text-decoration:none;
@@ -144,11 +128,8 @@ body {
     padding:5px 15px;
     border-radius:20px;
     margin-left:10px;
-    transition:var(--transition);
 }
 .sticky-bar a:hover { background:rgba(255,255,255,0.3); }
-
-/* Header */
 header {
     background:linear-gradient(135deg,var(--dark),var(--blue));
     color:#fff;
@@ -157,7 +138,6 @@ header {
     border-bottom:5px solid var(--gold);
     margin-top:52px;
 }
-
 .header-logos {
     display:flex;
     justify-content:center;
@@ -166,9 +146,7 @@ header {
     flex-wrap:wrap;
     margin-bottom:15px;
 }
-
 .logo { max-height:100px; border-radius:10px; }
-
 .suor-badge {
     max-height:90px;
     background:#fff;
@@ -176,7 +154,6 @@ header {
     border-radius:8px;
     border:2px solid var(--gold);
 }
-
 .header-phone {
     font-size:2.2rem;
     font-weight:900;
@@ -187,17 +164,8 @@ header {
     padding:10px 25px;
     background:rgba(0,0,0,0.2);
     border-radius:50px;
-    transition:var(--transition);
 }
 .header-phone:hover { background:rgba(0,0,0,0.3); }
-
-/* Navigation */
-nav {
-    background:var(--dark);
-    position:relative;
-    z-index:1000;
-}
-
 .menu-toggle {
     display:none;
     background:var(--blue);
@@ -209,7 +177,11 @@ nav {
     width:100%;
     border-bottom:2px solid var(--gold);
 }
-
+nav {
+    background:var(--dark);
+    position:relative;
+    z-index:1000;
+}
 nav ul {
     list-style:none;
     display:flex;
@@ -218,7 +190,6 @@ nav ul {
     margin:0;
     padding:0;
 }
-
 nav a {
     color:#fff;
     padding:16px 18px;
@@ -227,20 +198,16 @@ nav a {
     font-weight:600;
     text-transform:uppercase;
 }
-
 nav a:hover,
 .current-page {
     color:var(--gold);
     background:rgba(255,255,255,0.05);
 }
-
-/* Main */
 main {
     max-width:1200px;
     margin:2.5rem auto;
     padding:0 1.5rem;
 }
-
 .hero-banner {
     text-align:center;
     background:#fff;
@@ -250,8 +217,14 @@ main {
     margin-bottom:3rem;
     border-top:5px solid var(--blue);
 }
-
-/* Pulse Button */
+.feature-img {
+    width:100%;
+    max-width:750px;
+    border-radius:15px;
+    margin:25px auto;
+    border:4px solid var(--blue);
+    display:block;
+}
 .pulse-btn {
     background:linear-gradient(135deg,var(--red),#b71c1c);
     color:#fff;
@@ -265,54 +238,140 @@ main {
     margin:30px 0;
     border:4px solid #fff;
 }
-
 @keyframes pulse {
     0% { transform:scale(0.95); }
     70% { transform:scale(1.02); }
     100% { transform:scale(0.95); }
 }
-
-/* Floating buttons */
-.floating-call,
-.back-to-top {
+.usp-grid {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:15px;
+    margin:2rem 0;
+}
+.usp-item {
+    background:var(--light);
+    padding:1rem;
+    border-radius:10px;
+    font-weight:700;
+    text-align:center;
+    border:1px solid #ddd;
+}
+.hub-grid {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+    margin:3rem 0;
+}
+.hub-card {
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:var(--shadow);
+    border-top:4px solid var(--blue);
+    transition:var(--transition);
+}
+.hub-card:hover {
+    transform:translateY(-5px);
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+}
+.hub-card img {
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+.directory-section {
+    background:white;
+    padding:3rem;
+    border-radius:16px;
+    box-shadow:var(--shadow);
+    margin-bottom:2.5rem;
+    border-top:8px solid var(--blue);
+}
+.links-grid {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:12px;
+    margin:15px 0;
+}
+.links-grid a {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:12px 15px;
+    text-decoration:none;
+    background:var(--light);
+    border-radius:8px;
+    border:2px solid #e0e0e0;
+    font-weight:600;
+    color:var(--dark);
+    transition:var(--transition);
+}
+.links-grid a:hover {
+    background:var(--blue);
+    color:#fff;
+    border-color:var(--blue);
+}
+.emergency-box {
+    background:linear-gradient(135deg,var(--red),#b71c1c);
+    color:#fff;
+    padding:2.5rem;
+    border-radius:16px;
+    text-align:center;
+    margin:2.5rem 0;
+    box-shadow:var(--shadow);
+}
+.map-container {
+    background:white;
+    padding:2rem;
+    border-radius:16px;
+    box-shadow:var(--shadow);
+    margin:3rem 0;
+    text-align:center;
+}
+.floating-call {
     position:fixed;
+    bottom:20px;
     right:20px;
+    background:var(--blue);
+    color:#fff;
+    width:70px;
+    height:70px;
     border-radius:50%;
     display:flex;
     align-items:center;
     justify-content:center;
-    color:#fff;
-    z-index:9999;
-    border:3px solid #fff;
-    box-shadow:0 5px 15px rgba(0,0,0,0.3);
-    cursor:pointer;
-}
-
-.floating-call {
-    bottom:20px;
-    width:70px;
-    height:70px;
     font-size:2rem;
-    background:var(--blue);
+    z-index:9999;
+    border:3px solid white;
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+    transition:var(--transition);
 }
-
+.floating-call:hover { transform:scale(1.1); }
 .back-to-top {
-    bottom:100px;
+    position:fixed;
+    bottom:90px;
+    right:20px;
+    background:var(--green);
+    color:white;
     width:50px;
     height:50px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
     font-size:1.5rem;
-    background:var(--green);
+    z-index:9998;
+    border:2px solid white;
+    box-shadow:0 3px 10px rgba(0,0,0,0.2);
     opacity:0;
     visibility:hidden;
     transition:opacity 0.3s;
 }
-
 .back-to-top.visible {
     opacity:1;
     visibility:visible;
 }
-
-/* Footer */
 footer {
     background:var(--dark);
     color:#fff;
@@ -321,36 +380,21 @@ footer {
     border-top:8px solid var(--gold);
     margin-top:4rem;
 }
-
-/* Mobile */
+footer a { color:var(--gold); text-decoration:none; font-weight:700; padding:5px; }
+footer a:hover { text-decoration:underline; }
 @media (max-width:768px) {
     .menu-toggle { display:block; }
-
-    nav {
-        position:fixed;
-        top:44px;
-        left:0;
-        right:0;
-        max-height:0;
-        overflow:hidden;
-        transition:max-height 0.3s ease;
-    }
-
+    nav { position:fixed; top:44px; left:0; right:0; max-height:0; overflow:hidden; transition:max-height 0.3s ease; }
     nav.open { max-height:400px; }
-
     nav ul { flex-direction:column; }
-
     header { margin-top:44px; }
-
-    .pulse-btn {
-        font-size:1.4rem;
-        padding:20px 40px;
-    }
+    .pulse-btn { font-size:1.4rem; padding:20px 40px; }
+    .usp-grid { grid-template-columns:repeat(2,1fr); }
+    .hub-grid { grid-template-columns:1fr; }
+    .links-grid { grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); }
+    .floating-call { width:60px; height:60px; font-size:1.5rem; bottom:15px; right:15px; }
 }
-
-@media (prefers-reduced-motion:reduce) {
-    * { animation:none !important; transition:none !important; }
-}
+@media (prefers-reduced-motion:reduce) { .pulse-btn { animation:none; } }
 </style>
 
 <script>
@@ -365,12 +409,15 @@ document.addEventListener('DOMContentLoaded', () => {
     if (menuToggle && nav) {
         menuToggle.addEventListener('click', () => {
             nav.classList.toggle('open');
-            menuToggle.setAttribute(
-                'aria-expanded',
-                nav.classList.contains('open')
-            );
-            menuToggle.textContent =
-                nav.classList.contains('open') ? '✕ Close' : '☰ Menu';
+            menuToggle.setAttribute('aria-expanded', nav.classList.contains('open'));
+            menuToggle.textContent = nav.classList.contains('open') ? '✕ Close' : '☰ Menu';
+        });
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                nav.classList.remove('open');
+                menuToggle.textContent = '☰ Menu';
+                menuToggle.setAttribute('aria-expanded', 'false');
+            });
         });
     }
 
@@ -378,10 +425,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const scroll = window.scrollY;
 
         if (stickyBar) {
-            if (scroll > lastScroll && scroll > 100)
-                stickyBar.classList.add('hidden');
-            else
-                stickyBar.classList.remove('hidden');
+            if (scroll > lastScroll && scroll > 100) stickyBar.classList.add('hidden');
+            else stickyBar.classList.remove('hidden');
         }
 
         if (backToTop) {
@@ -399,7 +444,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 </script>
-
 </head>
 
 <body>
@@ -420,7 +464,7 @@ document.addEventListener('DOMContentLoaded', () => {
     </div>
 </header>
 
-<button class="menu-toggle" aria-label="Toggle navigation menu">☰ Menu</button>
+<button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">☰ Menu</button>
 
 <nav role="navigation" aria-label="Main Navigation">
     <div class="nav-container">
